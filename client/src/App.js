@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Pages/Navbar.js';
-import Home from './Pages/Home.js';
-import Projects from './Pages/Projects.js';
-import Skills from './Pages/Skills.js';
-import Resume from './Pages/Resume.js';
-import Contact from './Pages/Contact.js';
+import Header from './Pages/Header';
+import Navbar from './Pages/Navbar';
+import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import Skills from './Pages/Skills';
+import Resume from './Pages/Resume';
+import Contact from './Pages/Contact';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Header />
       <div className="min-h-screen bg-[#f4f4f4]">
         <Navbar />
         <div className="app">

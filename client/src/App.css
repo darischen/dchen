@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -64,4 +62,107 @@ body {
 
 .link:hover {
   text-decoration: underline;
+}
+
+/* link*/
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: inherit;
+}
+
+/* header */
+.custom-header {
+  background-color: #a8d0f0;
+  color: #333;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #0073e6;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0073e6;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+}
+
+.header-title:hover {
+  text-decoration: underline;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.header-contact {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.header-link {
+  color: #0073e6;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger mneu */
+.custom-dropdown {
+  background-color: #0073e6;
+  padding: 1rem 0;
+  border-top: 1px solid #d1d5db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-link:hover {
+  background-color: #005bb8;
+}
+
+.active-link {
+  background-color: #005bb8;
+}
+
+.link-text {
+  margin-left: 0.5rem;
+  font-weight: 500;
 }

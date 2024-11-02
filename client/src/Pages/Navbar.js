@@ -15,13 +15,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar">
-      <div className="navbar-content">
+    <nav className="navbar bg-[#0073e6] text-white shadow-md">
+      <div className="navbar-content max-w-[800px] mx-auto flex justify-between items-center px-4 py-3">
         <Link to="/" className="text-xl font-bold hover:underline">
           Daris Chen
         </Link>
         
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex justify-center items-center flex-grow space-x-8">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -38,6 +38,7 @@ const Navbar = () => {
           ))}
         </div>
 
+        {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -49,18 +50,19 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Custom Horizontal Dropdown Menu for Mobile */}
       {isOpen && (
-        <div className="md:hidden py-4 border-t border-gray-100">
-          <div className="flex flex-col space-y-2">
+        <div className="custom-dropdown">
+          <div className="dropdown-links">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 to={item.href}
-                className="flex items-center space-x-2 px-4 py-3 rounded-md transition-colors duration-200 hover:bg-blue-600"
+                className={`dropdown-link ${location.pathname === item.href ? 'active-link' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
-                {item.icon}
-                <span>{item.label}</span>
+                <span>{item.icon}</span>
+                <span className="link-text">{item.label}</span>
               </Link>
             ))}
           </div>
