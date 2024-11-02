@@ -166,3 +166,31 @@ a:active {
   margin-left: 0.5rem;
   font-weight: 500;
 }
+
+/* pfp */
+.profile-image {
+  width: 150px;
+  height: 200px;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+
+.profile-image-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-image-rounded-rect {
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.profile-image-square {
+  width: 150px;
+  height: 150px;
+  border-radius: 0;
+}

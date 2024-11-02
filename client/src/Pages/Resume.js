@@ -1,6 +1,7 @@
 import React from 'react';
-import { FileText, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import '../App.css';
+import resume from './resumeDarisChen.pdf';
 
 const Resume = () => {
   return (
@@ -8,7 +9,7 @@ const Resume = () => {
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Resume</h1>
         <a
-          href=".\Pages\resumeDarisChen.pdf"
+          href={resume}
           className="flex items-center gap-2 bg-[#0073e6] text-white px-4 py-2 rounded-md hover:bg-[#005bb8] transition-colors duration-200"
           download
         >

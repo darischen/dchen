@@ -1,4 +1,5 @@
 import React from 'react';
+import headshot from './headshot.jpg';
 
 const Home = () => {
   return (
@@ -8,9 +9,9 @@ const Home = () => {
         
         <div className="text-center mb-6">
           <img
-            src="client\src\Pages\headshot.jpg"
+            src={headshot}
             alt="Profile"
-            className="w-48 h-48 rounded-full mx-auto shadow-lg"
+            className="profile-image" 
           />
         </div>
 
