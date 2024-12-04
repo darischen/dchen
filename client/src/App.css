@@ -47,6 +47,10 @@ body {
   margin-bottom: 20px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .section {
   margin-bottom: 40px;
   padding: 20px;

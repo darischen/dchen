@@ -39,10 +39,14 @@ const Resume = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection('education')}
           >
-            <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200">
-              Education
-            </h2>
-            {openSections.education ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            <div className="flex items-center">
+              <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200 cursor-pointer">
+                Education
+                <span className="ml-2 cursor-pointer">
+                {openSections.education ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </span>
+              </h2>
+            </div>
           </div>
           {openSections.education && (
             <div className="mt-4">
@@ -61,10 +65,14 @@ const Resume = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection('skills')}
           >
-            <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200">
-              Skills
-            </h2>
-            {openSections.skills ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            <div className="flex items-center">
+              <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200 cursor-pointer">
+                Skills
+                <span className="ml-2 cursor-pointer">
+                {openSections.skills ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </span>
+              </h2>
+            </div>
           </div>
           {openSections.skills && (
             <ul className="mt-4 list-disc pl-5 text-gray-700">
@@ -81,10 +89,14 @@ const Resume = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection('projects')}
           >
-            <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200">
-              Projects
-            </h2>
-            {openSections.projects ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            <div className="flex items-center">
+              <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200 cursor-pointer">
+                Projects
+                <span className="ml-2 cursor-pointer">
+                {openSections.projects ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </span>
+              </h2>
+            </div>
           </div>
           {openSections.projects && (
             <div className="mt-4">
@@ -119,10 +131,14 @@ const Resume = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection('experience')}
           >
-            <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200">
-              Experience
-            </h2>
-            {openSections.experience ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            <div className="flex items-center">
+              <h2 className="text-2xl font-bold hover:text-[#005bb8] transition-colors duration-200 cursor-pointer">
+                Experience
+                <span className="ml-2 cursor-pointer">
+                {openSections.experience ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </span>
+              </h2>
+            </div>
           </div>
           {openSections.experience && (
             <div className="mt-4">
