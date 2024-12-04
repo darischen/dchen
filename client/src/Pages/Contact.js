@@ -42,11 +42,6 @@ const Contact = () => {
       
       <div className="bg-white rounded-lg shadow-md">
         <div className="p-8">
-          <p className="text-gray-600 mb-8 text-lg">
-            I'm always open to discussing new projects, opportunities, or partnerships. 
-            Feel free to reach out through any of the following channels:
-          </p>
-          
           <div className="grid gap-6">
             {contactInfo.map((item, index) => (
               item.href ? (
@@ -79,9 +74,6 @@ const Contact = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <p className="text-gray-600">
-              Response Time: Usually within 24-48 hours
-            </p>
           </div>
         </div>
       </div>
