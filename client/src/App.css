@@ -85,6 +85,15 @@ body {
   font-size: 0.9rem;
 }
 
+/* Profile Image */
+.profile-image {
+  width: 150px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Small rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  object-fit: cover; /* Ensure the image scales correctly */
+}
+
 /* Section and Headers */
 .header-title,
 .section-title {
