@@ -85,6 +85,22 @@ body {
   font-size: 0.9rem;
 }
 
+/* Project Border */
+
+.bordered-link {
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: block;
+  padding: 50px;
+  margin: 15px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.bordered-link:hover {
+  text-decoration: none;
+}
+
 /* Profile Image */
 .profile-image {
   width: 150px; /* Adjust size */

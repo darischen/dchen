@@ -48,6 +48,7 @@ const Projects = () => {
             to={`/projects/${project.id}`}
             state={{ project }}
             className="
+              bordered-link
               block
               bg-white
               p-6
