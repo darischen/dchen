@@ -10,14 +10,14 @@ const Projects = () => {
       title: 'Red Pitaya Hackathon',
       tools: 'Red Pitaya, Vivado by Xilinx, Python, Signal Processing, FPGA, VHDL',
       description:
-        'Improved communication speed by 75% in a simulated outer space environment using half-duplex infrared communication.',
+        'Created communication devices using the Red Pitaya.',
     },
     {
       id: 'stock-analysis-and-prediction',
       title: 'Stock Analysis and Prediction',
       tools: 'Git, TensorFlow, Jupyter, NumPy, Pandas',
       description:
-        'Developed an LSTM RNN for predicting stock prices based on historical data and increased accuracy by 22%, generating a 15% return on investment.',
+        'Stock price prediction using a Long Short Term Memory neural network.',
     },
     {
       id: 'plant-monitoring-system',
