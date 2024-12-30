@@ -33,6 +33,32 @@ const Projects = () => {
       description:
         'A full-stack web-based 1-on-1 card game, using 3D graphics with ThreeJS and real-time communication via WebSockets.',
     },
+    {
+      id: 'groundworks',
+      title: 'Groundwork Books Full-Stack Commercial Website',
+      tools: 'Svelte, Firebase, Square, Google Forms API, Tailwind',
+      description:
+        'A full-stack commercial website for Groundwork Books, including a shopping cart and inventory management system.',
+    },
+    {
+      id: 'devblog',
+      title: 'Developer Blog',
+      tools: 'HTML, CSS, JavaScript, Miro, Figma, Slack',
+      description: 'A full-stack Developer Blog for daily development updates.',
+    },
+    {
+      id: '16bit-adder',
+      title: '16-bit Carry-Look Ahead Adder',
+      tools: 'Digital, Verilog',
+      description: 'A 16 bit bitwise addition calculator using Carry-Look Ahead.',
+    },
+    {
+      id: 'darischen',
+      title: 'darischen.com',
+      tools: 'React.js, Tailwind CSS, Vercel',
+      description:
+        'My personal portfolio website, built using React.js and Tailwind',
+    },
   ];
 
   return (
