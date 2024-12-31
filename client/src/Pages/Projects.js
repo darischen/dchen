@@ -43,7 +43,7 @@ const Projects = () => {
     {
       id: 'devblog',
       title: 'Developer Blog',
-      tools: 'HTML, CSS, JavaScript, Miro, Figma, Slack',
+      tools: 'HTML, CSS, JavaScript, CodeMirror, Git, GitHub Pages, Miro, Figma, Slack',
       description: 'A full-stack Developer Blog for daily development updates.',
     },
     {

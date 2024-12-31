@@ -212,3 +212,7 @@ a:active {
     display: flex; /* Always display the navbar buttons */
   }
 }
+
+img[alt="Calendar"]{width: 800px; object-fit: contain;}
+img[alt="Journal"]{width: 800px; object-fit: contain;}
+img[alt="Task List"]{width: 800px; object-fit: contain;}
