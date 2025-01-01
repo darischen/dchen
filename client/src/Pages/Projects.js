@@ -48,9 +48,9 @@ const Projects = () => {
     },
     {
       id: '16bit-adder',
-      title: '16-bit Carry-Look Ahead Adder',
+      title: '16-bit Carry Look-Ahead Adder',
       tools: 'Digital, Verilog',
-      description: 'A 16 bit bitwise addition calculator using Carry-Look Ahead.',
+      description: 'A 16 bit bitwise addition calculator using Carry Look-Ahead.',
     },
     {
       id: 'darischen',

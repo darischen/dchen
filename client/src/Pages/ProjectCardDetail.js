@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 const ProjectCardDetail = () => {
   const { id } = useParams();
@@ -52,7 +57,7 @@ const ProjectCardDetail = () => {
       )}
 
       <div className="prose prose-invert max-w-none">
-        <ReactMarkdown>{markdownContent}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeRaw, rehypeKatex]}>{markdownContent}</ReactMarkdown>
       </div>
     </div>
   );
