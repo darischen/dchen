@@ -87,7 +87,7 @@ $$
 
 An adder for numbers of *n* length can be created from a serial connections of single-bit full adders, detailed above. However, each subsequent bit *i* where 1 $\leq$ *i* $\leq$ *n* after the first bit i = 0 depends on the calculation before it being complete before the operation on the current bit can be performed. This is because the previous iteration's output carry-out is the input carry-out for the current iteration. The current calculation cannot proceed until the previous one has finished. This implementation is called the Ripple Carry Adder.
 
-A flaw of the Ripple Carry Adder is the high delay between the input and output. A rectification of this problem is the Carry Look Ahead Adder, which enables the higher indexed carry inputs to be calculated in parallel, rather than waiting on previous carry operations to output. Two new functions are now added: \
+One flaw of the Ripple Carry Adder is the high delay between the input and output. A rectification of this problem is the Carry Look Ahead Adder, which enables the higher indexed carry inputs to be calculated in parallel, rather than waiting on previous carry operations to output. Two new functions are now added: \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carry-generate function:  $g_i = x_i \cdot y_i$ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carry-propagate function: $p_i = x_i \oplus y_i$
 
@@ -107,4 +107,20 @@ $$
 These carry out equations give us the carry out inputs for the operations on the first four bits after the first. The carry outs have been computed in parallel. However, the calculation for $c_4$ requires a 5-input logical OR gate, which is time consuming and costly. We can transform the equation for $c_4$ to become: \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$c_4 = G_{0,3} + (P_{0,3} \cdot c_0)$
 
-The implementation of the circuit uses an alternative but equivalent set of equations to perform the calculations. 
+Where $G_{0,3}$ and $P_{0,3}$ are defined as: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $G_{0,3} = g_3 + (p_3 \cdot g_2) + (p_3 \cdot p_2 \cdot g_1) + (p_3 \cdot p_2 \cdot p_1 \cdot g_0)$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $P_{0,3} = p_3 \cdot p_2 \cdot p_1 \cdot p_0$
+
+The implementation of the circuit uses an alternative but equivalent set of equations to perform the calculations. Swapping each logical OR gate with a logical AND gate and each XOR gate with XNOR gates gives us: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $s^{*}_i = x_i \odot y_i \odot c_i$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $c^{*}_{i+1} = ((x_i \odot y_i) \;+\; c_i) \cdot (x_i \;+\; y_i)$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $g^{*}_{i} = x_i \;+\; y_i$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $p^{*}_{i} = x_i \odot y_i$
+
+With these alternative equations laid out, the alternative carry functions can now be calculated: \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $c_1 = g_0 \cdot (p_0 \;+\; c_0)$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $c_2 = g_1 \cdot (p_1 \;+\; c_1) = g_1 \cdot (p_1 \;+\; g_0) \cdot (p_1 \;+\; p_0 \;+\; c_0)$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $c_3 = g_2 \cdot (p_2 \;+\; c_2) = g_2 \cdot (p_2 \;+\; g_1) \cdot (p_2 \;+\; p_1 \;+\; g_0) \cdot (p_2 \;+\; p_1 \;+\; p_0 \;+\; c_0)$ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $c_4 = g_3 \cdot (p_3 \;+\; g_2) \cdot (p_3 \;+\; p_2 \;+\; g_1) \cdot (p_3 \;+\; p_2 \;+\; p_1 \;+\; g_0) \cdot (p_3 \;+\; p_2 \;+\; p_1 \;+\; p_0 \;+\; c_0) $
+
+These are the equations implemented in the 4 Bit Adder image, and four of these 4 bit adders are connected in series with each other in the Ripple Carry Adder fashion. However, in Two Level CLA, the ripple carry between the four blocks are now connected with Carry Look-Ahead, using the same equations as each 4 bit adder.
