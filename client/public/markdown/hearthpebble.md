@@ -7,7 +7,9 @@ Hearthpebble is the ultimate medieval card game where strategy meets fantasy. Pl
 
 ## Quick Summary
 - Hearthpebble is a one-on-one multiplayer card game similar to Hearthstone.
+
 - The game is fully browser based, meaning that there is no download or installation required.
+
 - Real-time communication between players allows for smooth gameplay and minimal delays.
 
 ---
