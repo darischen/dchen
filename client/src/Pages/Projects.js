@@ -20,18 +20,11 @@ const Projects = () => {
         'Stock price prediction using a Long Short Term Memory neural network.',
     },
     {
-      id: 'plant-monitoring-system',
-      title: 'Plant Monitoring System',
-      tools: 'Circuit Design, Adafruit Metro, Moisture Sensor, Light Level Sensor',
-      description:
-        'Monitored plant health using sensors, alerting caretakers of undesirable conditions within 3 minutes.',
-    },
-    {
       id: 'hearthpebble',
       title: 'Hearthpebble',
       tools: 'MongoDB, Express.js, React.js, Node.js, Socket.io, Axios, ThreeJS, GSAP',
       description:
-        'A full-stack web-based 1-on-1 card game, using 3D graphics with ThreeJS and real-time communication via WebSockets.',
+        'A full-stack web-based 1-on-1 card game, using 3D graphics with ThreeJS and real-time communication via WebSockets and Socket.io.',
     },
     {
       id: 'groundworks',
