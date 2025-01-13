@@ -8,14 +8,20 @@ Groundworks Books Collective is a leftist, non-hierarchal, non-profit organizati
 ---
 
 ## Quick Summary
-- asdf
+- Users can browse an archive of all newspapers saved in the database
 
-- asdf
+- The store has over two thousand books to choose from, sorted by genre.
+
+- The store has recommendations hand-picked from the staff.
+
+- About Us page has contact information, operating hours, 
 
 ---
 
 ## Key Features
 - Users can access over 2000 books in the shop and use the Square payment API for a seamless online shopping experience.
+- Login information can be linked to a Google account for streamlined access.
+- Archives of the past newspapers are stored on a database.
 
 ---
 
