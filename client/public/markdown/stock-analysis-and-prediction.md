@@ -27,3 +27,4 @@ The stock price prediction program, named for the volatility of Tesla (TSLA) sto
 
 ### Price Predictions vs Historical Data
 ![Predictions](/markdown/eews-assets/predictions.png)
+![NVDA](/markdown/eews-assets/NVDA.png)
