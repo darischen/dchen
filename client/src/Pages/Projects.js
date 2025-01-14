@@ -39,13 +39,6 @@ const Projects = () => {
         'Stock price prediction using a Long Short Term Memory neural network.',
     },
     {
-      id: 'red-pitaya-hackathon',
-      title: 'Red Pitaya Hackathon',
-      tools: 'Red Pitaya, Vivado by Xilinx, Python, Signal Processing, FPGA, VHDL',
-      description:
-        'Created communication devices using the Red Pitaya.',
-    },
-    {
       id: 'darischen',
       title: 'darischen.com',
       tools: 'React.js, Tailwind CSS, Vercel',
