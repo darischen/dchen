@@ -53,7 +53,22 @@ const Resume = () => {
               <h3 className="text-xl font-semibold text-[#0073e6]">University of California San Diego</h3>
               <p className="text-gray-700">B.S. in Computer Engineering</p>
               <p className="text-gray-600 mt-2">
-                Relevant Coursework: Computer Organization and Systems Programming, Data Structures and Object Oriented Design, Discrete Mathematics, Mathematics for Algorithms and Systems, Linear Algebra, Data Structures, Software Engineering, Signal Analysis for Circuits and Systems, Analog Design
+              Relevant Coursework:<br></br>
+              Computer Organization and Systems Programming,<br></br>
+              Data Structures and Object Oriented Design,<br></br>
+              Discrete Mathematics,<br></br>
+              Mathematics for Algorithms and Systems,<br></br>
+              Linear Algebra,<br></br>
+              Data Structures,<br></br>
+              Software Engineering,<br></br>
+              Signal Analysis for Circuits and Systems,<br></br>
+              Analog Design,<br></br>
+              Digital Design/Digital Systems,<br></br>
+              Statistical Natural Language Processing,<br></br>
+              Parallel Computing,<br></br>
+              Operating System Principles,<br></br>
+              Machine Learning: Learning Algorithms,<br></br>
+              Probabilistic AI Models
               </p>
             </div>
           )}
@@ -77,8 +92,8 @@ const Resume = () => {
           {openSections.skills && (
             <ul className="mt-4 list-disc pl-5 text-gray-700">
               <li>Languages: Python, Java, C, C++, ARM, HTML, CSS, JavaScript</li>
-              <li>Libraries and Frameworks: React.js, Node.js, Express.js, Socket.io, JUnit, Linux, Ubuntu, Svelte, Tailwind, NumPy, pandas, Matplotlib, Tensorflow, CUDA, cuDNN</li>
-              <li>Developer Tools: Git, Visual Studio, Jest, Puppeteer, MongoDB, CodeMirror, Miro, Jira, Figma</li>
+              <li>Libraries and Frameworks: React.js, Node.js, Express.js, Socket.io, JUnit, Linux, Ubuntu, Svelte, Tailwind, NumPy, pandas, Matplotlib, Tensorflow, CUDA, cuDNN, OpenCL, Linux, Umix, Scikit-learn</li>
+              <li>Developer Tools: Git, Visual Studio, Jest, Puppeteer, MongoDB, CodeMirror, Miro, Jira, Figma, Microsoft Teams, Slack</li>
             </ul>
           )}
         </section>
@@ -100,18 +115,6 @@ const Resume = () => {
           </div>
           {openSections.projects && (
             <div className="mt-4">
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold text-[#0073e6]">Red Pitaya Hackathon</h3>
-                <p className="text-gray-600">
-                Tools: Red Pitaya, Vivado by Xilinx, Python, Signal Processing, Soldering Iron, FPGA, VHDL
-                </p>
-                <p className="text-gray-700 mt-2">
-                Engineered half-duplex infrared systems, boosting transmission efficiency by 75% on the Red Pitaya in simulated space conditions.
-                </p>
-                <p className="text-gray-700 mt-2">
-                Eliminated 3 of 4 steps to encode, transmit, and decode messages, decreasing the number of possible failure points and ensuring reliable communications.
-                </p>
-              </div>
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-[#0073e6]">Stock Analysis and Prediction AI</h3>
                 <p className="text-gray-600">Tools: Git, Tensorflow, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, Mean Squared Error</p>
@@ -189,7 +192,26 @@ const Resume = () => {
               <p className="text-gray-700 mt-2">
               Spearheaded daily stand-ups and bi-weekly sprints within the Agile Scrum framework, enhancing communication among team members by 40% and boosting project delivery timelines by 33% while ensuring alignment on project objectives across a team of 12 members.
               </p>
+              <h3 className="text-xl font-semibold text-[#0073e6]">Software Engineering Intern</h3>
+              <p className="text-gray-600">PersonifyApp.ai | January 2025 - Present</p>
+              <p className="text-gray-700 mt-2">
+               Built a user-driven feature leaderboard, increasing daily active user participation by 15% and reducing duplicate feature requests by 60%.
+              </p>
+              <p className="text-gray-700 mt-2">
+               Implemented admin controls for approving, rejecting, and closing feature requests, streamlining client communication and reducing request resolution time by 50%.
+              </p>
+              <p className="text-gray-700 mt-2">
+               Designed categorical sorting with a vote ranking system to determine popularity along with a search feature,  improving leader board readability by 45%.
+              </p>
+              <h3 className="text-xl font-semibold text-[#0073e6]">LLM Jailbreak Research</h3>
+              <p className="text-gray-700 mt-2">
+               Led a multi-phase research project to advance RedAgent, a multi-agent LLM jailbreak prompt generator, by systematically testing 3 novel architectures, enhancing data efficiency by 5%, and refining security robustness against adversarial attacks.
+              </p>
+              <p className="text-gray-700 mt-2">
+               Enhanced jailbreak detection accuracy by 0.7%, reducing successful adversarial attacks by 12% on benchmarked models.
+              </p>
             </div>
+            
           )}
         </section>
       </div>
