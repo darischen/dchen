@@ -5,77 +5,67 @@ import '../App.css';
 const Contact = () => {
   const contactInfo = [
     {
-      icon: <Mail className="text-[#0073e6]" size={24} />,
+      icon: <Mail className="text-white" size={24} />, // White icon for contrast
       label: 'Email',
       value: 'daris.chen@gmail.com',
-      href: 'mailto:daris.chen@gmail.com'
+      href: 'mailto:daris.chen@gmail.com',
+      bgColor: 'bg-blue-500' // Background color
     },
     {
-      icon: <Phone className="text-[#0073e6]" size={24} />,
+      icon: <Phone className="text-white" size={24} />,
       label: 'Phone',
       value: '(562) 386-3975',
-      href: 'tel:+15623863975'
+      href: 'tel:+15623863975',
+      bgColor: 'bg-green-500'
     },
     {
-      icon: <Github className="text-[#0073e6]" size={24} />,
+      icon: <Github className="text-white" size={24} />,
       label: 'GitHub',
       value: 'github.com/darischen',
-      href: 'https://github.com/darischen'
+      href: 'https://github.com/darischen',
+      bgColor: 'bg-gray-800'
     },
     {
-      icon: <Linkedin className="text-[#0073e6]" size={24} />,
+      icon: <Linkedin className="text-white" size={24} />,
       label: 'LinkedIn',
       value: 'linkedin.com/in/darischen',
-      href: 'https://www.linkedin.com/in/darischen'
+      href: 'https://www.linkedin.com/in/darischen',
+      bgColor: 'bg-blue-700'
     },
     {
-      icon: <MapPin className="text-[#0073e6]" size={24} />,
+      icon: <MapPin className="text-white" size={24} />,
       label: 'Location',
       value: 'San Diego, CA',
-      href: null
+      href: null,
+      bgColor: 'bg-red-500'
     }
   ];
 
   return (
     <div className="section">
-      <h1 className="section-title">Contact Me</h1>
+      <h1 className="section-title text-center text-3xl font-bold mb-8">Contact Me</h1>
       
-      <div className="bg-white rounded-lg shadow-md">
-        <div className="p-8">
-          <div className="grid gap-6">
-            {contactInfo.map((item, index) => (
-              item.href ? (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {contactInfo.map((item, index) => (
+          <div key={index} className={`rounded-lg shadow-md p-6 flex items-center gap-4 ${item.bgColor} text-white`}> 
+            {item.icon}
+            <div>
+              <div className="font-semibold">{item.label}</div>
+              {item.href ? (
                 <a
-                  key={index}
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : '_self'}
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                  className="flex items-center gap-4 p-4 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+                  className="underline hover:text-gray-200 transition"
                 >
-                  {item.icon}
-                  <div>
-                    <div className="font-semibold text-gray-700">{item.label}</div>
-                    <div className="text-[#0073e6]">{item.value}</div>
-                  </div>
+                  {item.value}
                 </a>
               ) : (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-4 rounded-lg"
-                >
-                  {item.icon}
-                  <div>
-                    <div className="font-semibold text-gray-700">{item.label}</div>
-                    <div className="text-gray-600">{item.value}</div>
-                  </div>
-                </div>
-              )
-            ))}
+                <div>{item.value}</div>
+              )}
+            </div>
           </div>
-          
-          <div className="mt-12 text-center">
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
