@@ -8,13 +8,15 @@ This website is the portfolio of my projects that I've done.
 ---
 
 ## Quick Summary
-- Details 7 projects complete with GitHub Links, images, and a quick summary of each project.
+- Details 8 projects complete with GitHub Links, images, and a quick summary of each project.
 
-- Resume is provided as a series of dropdowns and a downloadable PDF.
+- Resume is displayed using iFrame and is downloadable as a PDF.
 
 - Domain name claimed on namecheap.com
 
 - Website hosting from Vercel.
+
+- React and Tailwind CSS used for the front-end.
 
 ---
 

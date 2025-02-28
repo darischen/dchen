@@ -25,6 +25,13 @@ const Projects = () => {
         'A full-stack commercial website for Groundwork Books, including a shopping cart and inventory management system.',
     },
     {
+      id: 'redshift',
+      title: 'Redshift',
+      tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
+      description:
+        'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
+    },
+    {
       id: 'hearthpebble',
       title: 'Hearthpebble',
       tools: 'MongoDB, Express.js, React.js, Node.js, Socket.io, Axios, ThreeJS, GSAP',
@@ -34,7 +41,7 @@ const Projects = () => {
     {
       id: 'stock-analysis-and-prediction',
       title: 'Stock Analysis and Prediction',
-      tools: 'Git, TensorFlow, Jupyter, NumPy, Pandas',
+      tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
       description:
         'Stock price prediction using a Long Short Term Memory neural network.',
     },
