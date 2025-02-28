@@ -6,6 +6,13 @@ import '../App.css';
 const Projects = () => {
   const projects = [
     {
+      id: 'redshift',
+      title: 'Redshift',
+      tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
+      description:
+        'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
+    },
+    {
       id: 'devblog',
       title: 'Developer Blog',
       tools: 'HTML, CSS, JavaScript, CodeMirror, Git, GitHub Pages, Miro, Figma, Slack',
@@ -23,13 +30,6 @@ const Projects = () => {
       tools: 'Svelte, Firebase, Square, Google Forms API, Tailwind',
       description:
         'A full-stack commercial website for Groundwork Books, including a shopping cart and inventory management system.',
-    },
-    {
-      id: 'redshift',
-      title: 'Redshift',
-      tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
-      description:
-        'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
     },
     {
       id: 'hearthpebble',
