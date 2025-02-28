@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       id: 'redshift',
-      title: 'Redshift',
+      title: 'Redshift (Research)',
       tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
       description:
         'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
