@@ -32,18 +32,18 @@ const Projects = () => {
         'A full-stack commercial website for Groundwork Books, including a shopping cart and inventory management system.',
     },
     {
+      id: 'eews',
+      title: 'Elon Early Warning System',
+      tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
+      description:
+        'Stock price prediction using a Long Short Term Memory neural network.',
+    },
+    {
       id: 'hearthpebble',
       title: 'Hearthpebble',
       tools: 'MongoDB, Express.js, React.js, Node.js, Socket.io, Axios, ThreeJS, GSAP',
       description:
         'A full-stack web-based 1-on-1 card game, using 3D graphics with ThreeJS and real-time communication via WebSockets and Socket.io.',
-    },
-    {
-      id: 'stock-analysis-and-prediction',
-      title: 'Stock Analysis and Prediction',
-      tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
-      description:
-        'Stock price prediction using a Long Short Term Memory neural network.',
     },
     {
       id: 'darischen',
