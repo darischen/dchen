@@ -39,6 +39,8 @@ Given the rise of LLM usage in essential services and critical systems, the need
 - deBERTa v3 (LLM)
 - Phi-4 (LLM)
 - Phi-4 mini instruct (LLM)
+- Grok (LLM)
+- Granite (LLM)
   
 ---
 
