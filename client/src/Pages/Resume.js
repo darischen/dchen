@@ -21,8 +21,8 @@ const Resume = () => {
         <iframe
           src={resume}
           title="Resume PDF"
-          width="100%"
-          height="1000px"  // Increased height from 600px to 800px
+          width="800px"
+          height="1000px"
           className="border-0"
         />
       </div>
