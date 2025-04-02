@@ -35,7 +35,7 @@ const Contact = () => {
     {
       icon: <MapPin className="text-white" size={24} />,
       label: 'Location',
-      value: 'San Diego, CA',
+      value: 'San Diego, CA/Cerritos, CA',
       href: null,
       bgColor: 'bg-red-500'
     }
