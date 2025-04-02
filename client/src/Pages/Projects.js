@@ -33,7 +33,7 @@ const Projects = () => {
     },
     {
       id: 'eews',
-      title: 'Elon Early Warning System',
+      title: 'Elon Early Warning System (EEWS)',
       tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
       description:
         'Stock price prediction using a Long Short Term Memory neural network.',
