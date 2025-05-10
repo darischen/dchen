@@ -12,6 +12,13 @@ const Projects = () => {
       description:
         'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
     },
+    /* {
+      id: 'chess',
+      title: 'Mini-Stockfish',
+      tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython',
+      description:
+        'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
+    }, */
     {
       id: 'devblog',
       title: 'Developer Blog',
