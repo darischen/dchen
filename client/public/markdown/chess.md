@@ -1,12 +1,20 @@
 ## Overview
-asdf
+Mini-Stockfish is a chess engine modeled after the high level architecture of the current strongest chess engine, Stockfish. It is designed to provide a fast and efficient playing experience. It incorporates advanced techniques such as a book of opening moves, endgame tablebases, and a neural network for evaluation. The engine is built using Python and Cython, leveraging libraries like python-chess for move generation and evaluation. The PyGame portion of the project is adapted from a tutorial from a YouTube channel called "Coding Spot". From the original code, bug fixes have been made and some additional features have been added.
+
+([Coding Spot's (AlejoG10) YouTube Tutorial](https://www.youtube.com/watch?v=OpL0Gcfn4B4))
+
+([AlejoG10's GitHub Repository](https://github.com/AlejoG10/python-chess-ai-yt))
 
 ([GitHub Link](https://github.com/darischen/Mini-Stockfish))
 
 ---
 
 ## Quick Summary
-- asdf
+- A chess engine inspired by Stockfish, designed for speed and efficiency.
+- Utilizes a book of opening moves, endgame tablebases, and a neural network for evaluation.
+- Implements a minimax search algorithm with alpha-beta pruning.
+- Further pruning is enabled by advanced move ordering techniques.
+- Multi-threaded search capabilities using ThreadPoolExecutor.
 
 ---
 
@@ -36,6 +44,7 @@ asdf
 - Stockfish
 - Custom dlls
 - Linear Feed Forward Neural Network
+- tqdm
 
 ---
 
