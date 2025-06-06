@@ -16,7 +16,20 @@ asdf
 ---
 
 ## Tools Used
-- asdf
+- Python
+- Pygame
+- Cython
+- python-chess
+- scikit-learn
+- numpy
+- pandas
+- torch
+- ThreadPoolExecutor
+- Syzygy Tablebase
+- Gaviota Tablebase
+- Stockfish
+- Custom dlls
+- Linear Feed Forward Neural Network
 
 ---
 
