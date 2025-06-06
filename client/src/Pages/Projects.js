@@ -15,7 +15,7 @@ const Projects = () => {
     /* {
       id: 'chess',
       title: 'Mini-Stockfish',
-      tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython',
+      tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython, Multi-threading',
       description:
         'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
     }, */
