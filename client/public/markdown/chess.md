@@ -19,7 +19,10 @@ Mini-Stockfish is a chess engine modeled after the high level architecture of th
 ---
 
 ## Key Features
-- Book of opening moves calculated using Stockfish at Depth 22
+- Book of opening moves
+  - The JSON is converted into a zobrist hash table for fast lookup
+  - Each position in each opening line is evaluated using Stockfish at Depth 22
+  - The code chooses the best move from the opening book if available
 - Gaviota and Syzygy Tablebases for perfect endgame play
 - Custom DLLs for fast move generation
 - Linear Feed Forward Neural Network for evaluation
@@ -27,6 +30,13 @@ Mini-Stockfish is a chess engine modeled after the high level architecture of th
 - Static evaluation function using heuristic methods like piece-square tables, mobility, king safety, and pawn structure
 - Multi-threaded search using ThreadPoolExecutor
 - Cython for performance optimization
+- Iterative deepening for efficient search
+- Transposition table for storing previously evaluated positions
+- Accumulator for efficient evaluation of positions
+- Move Ordering techniques to improve search efficiency
+- Support for UCI (Universal Chess Interface) protocol for engine communication
+- Quiescence search to handle tactical positions
+- Heuristic evaluation functions for non-neural network evaluations
 ---
 
 ## Tools Used
@@ -50,6 +60,14 @@ Mini-Stockfish is a chess engine modeled after the high level architecture of th
 
 ## Images
 
+### Chess Board
+![Chess Board](/markdown/chess-assets/board.png)
+
+### Opening Book Printout
+![Book Moves](/markdown/chess-assets/book.png)
+
+### Printout of Minimax Search and Iterative Deepening
+![Minimax](/markdown/chess-assets/minimax.png)
 
 ---
 
