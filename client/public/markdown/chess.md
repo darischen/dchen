@@ -11,8 +11,14 @@ asdf
 ---
 
 ## Key Features
-- asdf
-
+- Book of opening moves calculated using Stockfish at Depth 22
+- Gaviota and Syzygy Tablebases for perfect endgame play
+- Custom DLLs for fast move generation
+- Linear Feed Forward Neural Network for evaluation
+- Minimax search with alpha beta pruning and advanced move ordering
+- Static evaluation function using heuristic methods like piece-square tables, mobility, king safety, and pawn structure
+- Multi-threaded search using ThreadPoolExecutor
+- Cython for performance optimization
 ---
 
 ## Tools Used
