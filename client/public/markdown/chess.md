@@ -69,6 +69,9 @@ Mini-Stockfish is a chess engine modeled after the high level architecture of th
 ### Printout of Minimax Search and Iterative Deepening
 ![Minimax](/markdown/chess-assets/minimax.png)
 
+### Codebase UML Diagram
+![UML](/markdown/chess-assets/uml.png)
+
 ---
 
 ## Schema
