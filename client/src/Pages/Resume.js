@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download } from 'lucide-react';
 import '../App.css';
-import resume from './resumeDarisChen.pdf';
+import resume from './DarisChenResume.pdf';
 
 const Resume = () => {
   return (
@@ -11,7 +11,7 @@ const Resume = () => {
         <a
           href={resume}
           className="flex items-center gap-2 bg-[#0073e6] text-white px-4 py-2 rounded-md hover:bg-[#005bb8] transition-colors duration-200"
-          download="resumeDarisChen.pdf"
+          download="DarisChenResume.pdf"
         >
           <Download size={20} />
           Download PDF
