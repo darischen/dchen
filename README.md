@@ -34,13 +34,13 @@ The Home page includes a brief introduction about myself, my background, and my 
 The projects page includes a list of my projects, each with a brief description and a link to the project page. The project pages are dynamically generated from markdown files stored in the `markdown` folder. Each project page includes a detailed description of the project, as well as any relevant images or videos.
 
 The project page displays the following projects:
-- [RedShift](daris.chen.com/projects/redshift)
-- [Developer Blog](daris.chen.com/projects/devblog)
-- [16-bit Carry Look-Ahead Adder](daris.chen.com/projects/16bit-adder)
-- [Groundworks Books Full-Stack Commercial Website](daris.chen.com/projects/groundworks)
-- [Elon Early Warning System (EEWS)](daris.chen.com/projects/eews)
-- [Hearthpebble](daris.chen.com/projects/hearthpebble)
-- [This Website](daris.chen.com/projects/darischen)
+- [RedShift](https://darischen.com/projects/redshift)
+- [Developer Blog](https://darischen.com/projects/devblog)
+- [16-bit Carry Look-Ahead Adder](https://darischen.com/projects/16bit-adder)
+- [Groundworks Books Full-Stack Commercial Website](https://darischen.com/projects/groundworks)
+- [Elon Early Warning System (EEWS)](https://darischen.com/projects/eews)
+- [Hearthpebble](https://darischen.com/projects/hearthpebble)
+- [This Website](https://darischen.com/projects/darischen)
 
 ### [Resume](daris.chen.com/resume)
 The Resume page includes a downloadable PDF version of my resume, as well as the content of my resume in PDF format. The PDF is displayed using an iframe, which allows for easy viewing and downloading.
