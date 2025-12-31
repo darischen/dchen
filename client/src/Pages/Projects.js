@@ -6,11 +6,11 @@ import '../App.css';
 const Projects = () => {
   const projects = [
     {
-      id: 'redshift',
-      title: 'Redshift (Research)',
-      tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
+      id: 'groundworks',
+      title: 'Groundwork Books Full-Stack Commercial Website',
+      tools: 'Next.js, Vercel, Firebase, Square, Redis, Pinecone, Tailwind, Instagram API, Google Forms API',
       description:
-        'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
+        'A full-stack commercial website hosted on Vercel for Groundwork Books, including a shopping cart and inventory management system.',
     },
     {
       id: 'chess',
@@ -20,10 +20,18 @@ const Projects = () => {
         'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
     },
     {
-      id: 'devblog',
-      title: 'Developer Blog',
-      tools: 'HTML, CSS, JavaScript, CodeMirror, Git, GitHub Pages, Miro, Figma, Slack',
-      description: 'A full-stack Developer Blog for daily development updates.',
+      id: '8-bit CPU',
+      title: '8-bit CPU with 9-bit ISA',
+      tools: 'System Verilog, Intel FPGA ModelSim, Quartus Prime',
+      description:
+        'An 8-bit CPU with a custom 9-bit instruction set architecture, implemented using System Verilog and simulated on Intel FPGA ModelSim. The 9-bit ISA is inspired by MIPS and can complete Two\'s Complement Multiplication with two and three digits and calculate Hamming Distance.',
+    },
+    {
+      id: 'redshift',
+      title: 'Redshift (Research)',
+      tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
+      description:
+        'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
     },
     {
       id: '16bit-adder',
@@ -32,18 +40,17 @@ const Projects = () => {
       description: 'A 16 bit bitwise addition calculator using Carry Look-Ahead.',
     },
     {
-      id: 'groundworks',
-      title: 'Groundwork Books Full-Stack Commercial Website',
-      tools: 'Svelte, Firebase, Square, Google Forms API, Tailwind',
-      description:
-        'A full-stack commercial website for Groundwork Books, including a shopping cart and inventory management system.',
-    },
-    {
       id: 'eews',
       title: 'Elon Early Warning System (EEWS)',
       tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
       description:
         'Stock price prediction using a Long Short Term Memory neural network.',
+    },
+    {
+      id: 'devblog',
+      title: 'Developer Blog',
+      tools: 'HTML, CSS, JavaScript, CodeMirror, Git, GitHub Pages, Miro, Figma, Slack',
+      description: 'A full-stack Developer Blog for daily development updates.',
     },
     {
       id: 'hearthpebble',
