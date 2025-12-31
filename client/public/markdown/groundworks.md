@@ -48,11 +48,12 @@ Groundworks Books Collective is a leftist, non-hierarchal, non-profit organizati
 ### Landing Page
 ![Landing](/markdown/groundworks-assets/landing.png)
 
-### Archive
-![Archive](/markdown/groundworks-assets/archive.png)
+### Community
+![Community](/markdown/groundworks-assets/community.png)
 
 ### Store
 ![Store](/markdown/groundworks-assets/store.png)
+![Modal](/markdown/groundworks-assets/modal.png)
 
 ### Shopping Cart
 ![Shopping Cart](/markdown/groundworks-assets/cart.png)
