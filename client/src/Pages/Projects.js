@@ -20,11 +20,11 @@ const Projects = () => {
         'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
     },
     {
-      id: '8-bit CPU',
-      title: '8-bit CPU with 9-bit ISA',
+      id: 'CPU',
+      title: 'TriCore9',
       tools: 'System Verilog, Intel FPGA ModelSim, Quartus Prime',
       description:
-        'An 8-bit CPU with a custom 9-bit instruction set architecture, implemented using System Verilog and simulated on Intel FPGA ModelSim. The 9-bit ISA is inspired by MIPS and can complete Two\'s Complement Multiplication with two and three digits and calculate Hamming Distance.',
+        'An 8-bit CPU with a custom 9-bit instruction set architecture and custom assembler, implemented using System Verilog and simulated on Intel FPGA ModelSim. The 9-bit ISA is inspired by MIPS and can complete Two\'s Complement Multiplication with two and three terms and calculate Hamming Distance.',
     },
     {
       id: 'redshift',
