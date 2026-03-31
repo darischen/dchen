@@ -6,6 +6,27 @@ import '../App.css';
 const Projects = () => {
   const projects = [
     {
+      id: 'flipperzillow',
+      title: 'FlipperZillow',
+      tools: 'Next.js, React, TypeScript, Tailwind CSS, Three.js, WebSpatial, Claude API, ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Google Maps API, Depth Anything V2, SAM3D, Open3D',
+      description:
+        'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration. Fetches Realtor.com property photos via RapidAPI, generates depth maps, reconstructs 3D models, analyzes rooms with semantic AI on AMD ROCm GPU, and creates professional voice-over tours.',
+    },
+    {
+      id: 'weatherapp',
+      title: 'WeatherApp',
+      tools: 'Next.js, React, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Google Places API, Open-Meteo API, YouTube API, Leaflet, pdfkit, papaparse, xmlbuilder2',
+      description:
+        'A full-stack weather application with real-time forecasts, interactive maps, location search via Google Places, and database-backed weather records with CSV/PDF/XML export capabilities.',
+    },
+    {
+      id: 'simplerfy',
+      title: 'Simplerfy',
+      tools: 'Next.js, React, TypeScript, Tailwind CSS, Claude API, Chrome Extension API, LaTeX, PDF parsing',
+      description:
+        'An AI-powered job application platform featuring resume tailoring, interview answer generation, and resume scoring powered by Claude. Includes a browser extension that autofills job applications across 15+ major job boards.',
+    },
+    {
       id: 'groundworks',
       title: 'Groundwork Books Full-Stack Commercial Website',
       tools: 'Next.js, Vercel, Firebase, Square, Redis, Pinecone, Tailwind, Instagram API, Google Forms API',
