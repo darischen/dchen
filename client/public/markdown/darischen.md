@@ -8,7 +8,7 @@ This website is the portfolio of my projects that I've done.
 ---
 
 ## Quick Summary
-- Details 8 projects complete with GitHub Links, images, and a quick summary of each project.
+- Details 11 projects complete with GitHub Links, images, and a quick summary of each project.
 
 - Resume is displayed using iFrame and is downloadable as a PDF.
 
