@@ -42,8 +42,7 @@ const ProjectCardDetail = () => {
           color: '#ec4899',
           cursor: 'pointer',
           fontSize: '1rem',
-          marginBottom: '20px',
-          textDecoration: 'underline'
+          marginBottom: '20px'
         }}
       >
         ← Back to Projects
