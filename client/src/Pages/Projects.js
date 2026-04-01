@@ -13,7 +13,7 @@ const Projects = () => {
       id: 'flipperzillow',
       title: 'FlipperZillow',
       categories: ['ml', 'web'],
-      tools: 'Next.js, React, TypeScript, Tailwind CSS, WebSpatial, Claude API, ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Google Maps API, Depth Anything V2, SAM3D, Open3D',
+      tools: 'ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, WebSpatial, Claude API, Google Maps API, Depth Anything V2, SAM3D, Open3D, Three.js',
       description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       id: 'simplerfy',
       title: 'Simplerfy',
       categories: ['web'],
-      tools: 'Next.js, React, TypeScript, Tailwind CSS, Claude API, Chrome Extension API, LaTeX, PDF parsing',
+      tools: 'Chrome Extension API, Next.js, React, TypeScript, Tailwind CSS, Claude API, LaTeX, PDF parsing',
       description:
         'An AI-powered job application platform featuring resume tailoring, interview answer generation, and resume scoring powered by Claude. Includes a browser extension that autofills job applications across 15+ major job boards.',
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       id: 'groundworks',
       title: 'Groundwork Books Full-Stack Commercial Website',
       categories: ['web'],
-      tools: 'Next.js, Vercel, Firebase, Square, Redis, Pinecone, Tailwind, Instagram API, Google Forms API',
+      tools: 'Square, Redis, Pinecone, Tailwind CSS, Next.js, Vercel, Instagram API, Google Forms API',
       description:
         'A full-stack commercial website hosted on Vercel for Groundwork Books, including a shopping cart and inventory management system.',
     },
@@ -101,6 +101,14 @@ const Projects = () => {
       tools: 'React.js, Tailwind CSS, Vercel',
       description:
         'My personal portfolio website, built using React.js and Tailwind',
+    },
+    {
+      id: 'patentiq',
+      title: 'PatentIQ AI',
+      categories: ['ml', 'web'],
+      tools: 'Python, FastAPI, Next.js, OpenAI API, OpenAI Embeddings, PostgreSQL, pgvector, Supabase, Auth0, USPTO Data API, Docker, Vercel',
+      description:
+        'An AI-powered patent search and drafting assistant using semantic embeddings and vector similarity search. Combines LLM-based analysis with USPTO data to help students and inventors identify related patents and receive AI-assisted drafting suggestions.',
     },
   ];
 
