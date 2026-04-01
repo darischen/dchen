@@ -10,10 +10,18 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 'patentiq',
+      title: 'PatentIQ AI',
+      categories: ['ml', 'web'],
+      tools: 'PostgreSQL, Auth0, FastAPI, pgvector, Supabase, Python, Next.js, OpenAI API, OpenAI Embeddings, USPTO Data API, Docker, Vercel',
+      description:
+        'An AI-powered patent search and drafting assistant using semantic embeddings and vector similarity search. Combines LLM-based analysis with USPTO data to help students and inventors identify related patents and receive AI-assisted drafting suggestions.',
+    },
+    {
       id: 'flipperzillow',
       title: 'FlipperZillow',
       categories: ['ml', 'web'],
-      tools: 'ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, WebSpatial, Claude API, Google Maps API, Depth Anything V2, SAM3D, Open3D, Three.js',
+      tools: 'Depth Anything V2, SAM3D, WebSpatial, DFormerV2, AMD ROCm, PyTorch, Open3D, ElevenLabs API, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, Claude API, Google Maps API, Three.js',
       description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
@@ -101,14 +109,6 @@ const Projects = () => {
       tools: 'React.js, Tailwind CSS, Vercel',
       description:
         'My personal portfolio website, built using React.js and Tailwind',
-    },
-    {
-      id: 'patentiq',
-      title: 'PatentIQ AI',
-      categories: ['ml', 'web'],
-      tools: 'Python, FastAPI, Next.js, OpenAI API, OpenAI Embeddings, PostgreSQL, pgvector, Supabase, Auth0, USPTO Data API, Docker, Vercel',
-      description:
-        'An AI-powered patent search and drafting assistant using semantic embeddings and vector similarity search. Combines LLM-based analysis with USPTO data to help students and inventors identify related patents and receive AI-assisted drafting suggestions.',
     },
   ];
 

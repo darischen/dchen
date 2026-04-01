@@ -76,10 +76,10 @@ Simplerfy is an intelligent job application management and resume optimization p
 - React 19
 - TypeScript
 - Tailwind CSS
-- Claude API (Anthropic)
-- LaTeX (resume format)
+- Claude API
+- LaTeX
 - Chrome Extension API
-- PDF parsing (pdf-parse, react-pdf)
+- PDF parsing
 - Local storage for data persistence
 
 ---
