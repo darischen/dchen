@@ -24,9 +24,9 @@ const PageHeader = ({
           <p className="subtitle">{title}</p>
           <p>{bio}</p>
           <div className="page-header-links">
-            <a href="https://github.com/darischen">GitHub</a>
+            <a href="https://github.com/darischen" target="_blank" rel="noopener noreferrer">GitHub</a>
             <span>·</span>
-            <a href="https://www.linkedin.com/in/darischen">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/darischen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <span>·</span>
             <a href="mailto:daris.chen@gmail.com">Email</a>
           </div>
