@@ -5,7 +5,6 @@ import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import ProjectCardDetail from './Pages/ProjectCardDetail';
 import Resume from './Pages/Resume';
-import Contact from './Pages/Contact';
 import './App.css';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectCardDetail />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
