@@ -40,7 +40,7 @@ const ProjectCard = ({
   // Create gradient border style for multi-category cards
   const cardStyle = categories.length > 1 ? {
     borderLeft: '3px solid transparent',
-    backgroundImage: `linear-gradient(#1a1a2e, #1a1a2e), linear-gradient(to bottom, ${getAccentColor(categories[0])}, ${getAccentColor(categories[1])})`,
+    backgroundImage: `linear-gradient(#1a1a2e, #1a1a2e), linear-gradient(to bottom, ${getAccentColor(categories[0])} 0%, ${getAccentColor(categories[0])} 30%, ${getAccentColor(categories[1])} 70%, ${getAccentColor(categories[1])} 100%)`,
     backgroundClip: 'padding-box, border-box',
     backgroundOrigin: 'padding-box, border-box',
   } : {};
