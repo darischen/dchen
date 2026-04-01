@@ -25,12 +25,12 @@ const Projects = () => {
       description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
-      id: 'weatherapp',
-      title: 'WeatherApp',
-      categories: ['web'],
-      tools: 'Next.js, React, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Google Places API, Open-Meteo API, YouTube API, Leaflet, pdfkit, papaparse, xmlbuilder2',
+      id: 'chess',
+      title: 'Mini-Stockfish',
+      categories: ['ml'],
+      tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython, Multi-threading',
       description:
-        'A full-stack weather application with real-time forecasts, interactive maps, location search via Google Places, and database-backed weather records with CSV/PDF/XML export capabilities.',
+        'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
     },
     {
       id: 'simplerfy',
@@ -47,14 +47,6 @@ const Projects = () => {
       tools: 'Square, Redis, Pinecone, Tailwind CSS, Next.js, Vercel, Instagram API, Google Forms API',
       description:
         'A full-stack commercial website hosted on Vercel for Groundwork Books, including a shopping cart and inventory management system.',
-    },
-    {
-      id: 'chess',
-      title: 'Mini-Stockfish',
-      categories: ['ml'],
-      tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython, Multi-threading',
-      description:
-        'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
     },
     {
       id: 'CPU',
@@ -78,6 +70,14 @@ const Projects = () => {
       categories: ['hw'],
       tools: 'Digital, Verilog',
       description: 'A 16 bit bitwise addition calculator using Carry Look-Ahead.',
+    },
+    {
+      id: 'weatherapp',
+      title: 'WeatherApp',
+      categories: ['web'],
+      tools: 'Next.js, React, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Google Places API, Open-Meteo API, YouTube API, Leaflet, pdfkit, papaparse, xmlbuilder2',
+      description:
+        'A full-stack weather application with real-time forecasts, interactive maps, location search via Google Places, and database-backed weather records with CSV/PDF/XML export capabilities.',
     },
     {
       id: 'eews',
