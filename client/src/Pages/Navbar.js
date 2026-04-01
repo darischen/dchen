@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, FolderGit2, FileText, Mail } from 'lucide-react';
+import { Home, FolderGit2, FileText } from 'lucide-react';
+import '../App.css';
 
 const Navbar = () => {
   const location = useLocation();
@@ -9,7 +10,6 @@ const Navbar = () => {
     { label: 'Home', href: '/', icon: <Home size={18} /> },
     { label: 'Projects', href: '/projects', icon: <FolderGit2 size={18} /> },
     { label: 'Resume', href: '/resume', icon: <FileText size={18} /> },
-    { label: 'Contact', href: '/contact', icon: <Mail size={18} /> },
   ];
 
   return (
