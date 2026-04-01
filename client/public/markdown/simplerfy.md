@@ -87,19 +87,19 @@ Simplerfy is an intelligent job application management and resume optimization p
 ## Images
 
 ### Extension
-// IMAGE 1: EXTENSION
+![extension](/markdown/simplerfy-assets/extension.png)
 
 ### Profile Page
-// IMAGE 2: PROFILE
+![Profile](/markdown/simplerfy-assets/profile.png)
 
 ### Generate Answers Page
-// IMAGE 3: GENERATE ANSWERS
+![Generate Answers](/markdown/simplerfy-assets/answer-gen.png)
 
-### Tailor Resume Page
-// IMAGE 4: TAILOR RESUME
+### Tailor Resume Page![alt text](image.png)
+![Tailor Resume](/markdown/simplerfy-assets/tailor-resume.png)
 
 ### Dashboard
-// IMAGE 5: DASHBOARD
+![Dashboard](/markdown/simplerfy-assets/dashboard.png)
 
 ### Applications Tracker Page
-// IMAGE 6: APPLICATIONS TRACKER
+![Applications Tracker](/markdown/simplerfy-assets/applications-tracker.png)

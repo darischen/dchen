@@ -85,20 +85,41 @@ PatentIQ AI is an intelligent patent search and drafting assistant built to simp
 
 ## Images
 
-### Patent Search Interface
-// IMAGE 1: SEARCH_INTERFACE
+### Login Page
+![PMALogin](/markdown/patentiq-assets/PMALogin.png)
 
-### Search Results & Rankings
-// IMAGE 2: SEARCH_RESULTS
+### Projects Page
+![Projects](/markdown/patentiq-assets/Projects.png)
 
-### Idea Submission Form
-// IMAGE 3: IDEA_SUBMISSION
+### AI Chatbox/File Upload
+![Chatbox](/markdown/patentiq-assets/Chatbox.png)
 
-### Recommendation Output
-// IMAGE 4: RECOMMENDATIONS
+### Baseline Summary
+![BaselineSummary](/markdown/patentiq-assets/BaselineSummary.png)
 
-### CPC Classification Suggestions
-// IMAGE 5: CPC_SUGGESTIONS
+### Features Analyzed
+![FeaturesAnalyzed](/markdown/patentiq-assets/FeaturesAnalyzed.png)
 
-### User Dashboard
-// IMAGE 6: USER_DASHBOARD
+### Feature Overlap
+![FeatureOverlap](/markdown/patentiq-assets/FeatureOverlap.png)
+
+### Similar Patents
+![SimilarPatents](/markdown/patentiq-assets/SimilarPatents.png)
+
+### LLM Confidence Scores
+![LLMConfidence](/markdown/patentiq-assets/LLMConfidence.png)
+
+### Strategy Sandbox
+![StrategySandbox](/markdown/patentiq-assets/StrategySandbox.png)
+
+### Feature Heatmap
+![FeatureHeatmap](/markdown/patentiq-assets/FeatureHeatmap.png)
+
+### Prior Art Explorer
+![PriorArtExplorer](/markdown/patentiq-assets/PriorArtExplorer.png)
+
+### History
+![History](/markdown/patentiq-assets/History.png)
+
+### Trash
+![Trash](/markdown/patentiq-assets/Trash.png)
