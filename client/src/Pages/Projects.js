@@ -13,7 +13,7 @@ const Projects = () => {
       id: 'flipperzillow',
       title: 'FlipperZillow',
       categories: ['ml', 'web'],
-      tools: 'Next.js, React, TypeScript, Tailwind CSS, Three.js, WebSpatial, Claude API, ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Google Maps API, Depth Anything V2, SAM3D, Open3D',
+      tools: 'Next.js, React, TypeScript, Tailwind CSS, WebSpatial, Claude API, ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Google Maps API, Depth Anything V2, SAM3D, Open3D',
       description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
