@@ -130,42 +130,45 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
 ### Architecture Pipeline
 
 **PIPELINE A: 3D Reconstruction**
-```
-Address Input → Realtor.com API (RapidAPI) → Interior Photos
-    ↓
-Depth Anything V2 → Depth Maps
-    ↓
-SAM3D Segmentation → Segmentation Masks
-    ↓
-Point Cloud Generation → 3D Model
-    ↓
-.glb Export → WebSpatial Renderer (Apple Vision Pro)
-```
+
+    ```
+    Address Input → Realtor.com API (RapidAPI) → Interior Photos
+        ↓
+    Depth Anything V2 → Depth Maps
+        ↓
+    SAM3D Segmentation → Segmentation Masks
+        ↓
+    Point Cloud Generation → 3D Model
+        ↓
+    .glb Export → WebSpatial Renderer (Apple Vision Pro)
+    ```
 
 **PIPELINE B: AI Narration**
-```
-Address Input → Realtor.com API (RapidAPI) → Interior Photos
-    ↓
-Depth Anything V2 → Depth Maps
-    ↓
-DFormerV2 on AMD GPU → Semantic Features & Room Analysis
-    ↓
-Aggregated Property Summary
-    ↓
-Claude → Realtor Script Generation
-    ↓
-ElevenLabs → Voice-Over Audio
-```
+
+    ```
+    Address Input → Realtor.com API (RapidAPI) → Interior Photos
+        ↓
+    Depth Anything V2 → Depth Maps
+        ↓
+    DFormerV2 on AMD GPU → Semantic Features & Room Analysis
+        ↓
+    Aggregated Property Summary
+        ↓
+    Claude → Realtor Script Generation
+        ↓
+    ElevenLabs → Voice-Over Audio
+    ```
 
 **Frontend Integration**
-```
-Both Pipelines → Next.js Frontend
-    ↓
-Address Search & Map Display
-    ↓
-Progress Tracking with Real-Time Updates
-    ↓
-Tour Experience Page with 3D Viewer + Audio Player
-    ↓
-Semantic Search Chat Interface
-```
+
+    ```
+    Both Pipelines → Next.js Frontend
+        ↓
+    Address Search & Map Display
+        ↓
+    Progress Tracking with Real-Time Updates
+        ↓
+    Tour Experience Page with 3D Viewer + Audio Player
+        ↓
+    Semantic Search Chat Interface
+    ```
