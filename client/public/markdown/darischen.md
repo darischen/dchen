@@ -51,7 +51,7 @@ This website is the portfolio of my projects that I've done.
 - Remark
 - Katex
 - LaTeX
-- Vercel (Hosting)
+- Vercel
 - Git & GitHub
 
 ---

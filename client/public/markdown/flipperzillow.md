@@ -128,7 +128,7 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
 
 ### Architecture Pipeline
 
-### **PIPELINE A: 3D Reconstruction**
+### &nbsp; **PIPELINE A: 3D Reconstruction**
 
 
     Address Input → Realtor.com API (RapidAPI) → Interior Photos
@@ -142,7 +142,7 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
     .glb Export → WebSpatial Renderer (Apple Vision Pro)
 
 
-### **PIPELINE B: AI Narration**
+### &nbsp; **PIPELINE B: AI Narration**
 
 
     Address Input → Realtor.com API (RapidAPI) → Interior Photos
@@ -158,7 +158,7 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
     ElevenLabs → Voice-Over Audio
 
 
-### **Frontend Integration**
+### &nbsp; **Frontend Integration**
 
 
     Both Pipelines → Next.js Frontend

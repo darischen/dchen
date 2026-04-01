@@ -57,7 +57,7 @@ Groundwork Books Collective is a leftist, non-hierarchical, non-profit organizat
 - Upstash Redis
 - Instagram Basic Display API
 - Google Sheets API
-- Vercel (Hosting & Deployment)
+- Vercel
  
 ---
 
