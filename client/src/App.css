@@ -435,6 +435,7 @@ p {
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 
 .project-category-label {
