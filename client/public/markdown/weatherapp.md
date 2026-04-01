@@ -81,17 +81,17 @@ WeatherApp is a full-stack weather application that provides real-time weather d
 - Tailwind CSS
 - Prisma ORM
 - PostgreSQL Database
-- Leaflet (Maps)
+- Leaflet
 - React-Leaflet
 - Google Places API
 - Open-Meteo Weather API
 - YouTube Data API
-- pdfkit (PDF Export)
-- papaparse (CSV Export)
-- xmlbuilder2 (XML Export)
-- date-fns (Date Utilities)
-- Zod (Schema Validation)
-- Lucide React (Icons)
+- pdfkit
+- papaparse
+- xmlbuilder2
+- date-fns
+- Zod
+- Lucide React
 
 ---
 

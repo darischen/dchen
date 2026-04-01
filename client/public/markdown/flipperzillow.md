@@ -93,19 +93,18 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
 - React 19
 - TypeScript
 - Tailwind CSS
-- Three.js (3D Rendering)
-- WebSpatial & @webspatial/next-plugin (Apple Vision Pro)
+- WebSpatial
 - Google Maps JavaScript API & Google Places API
 - RapidAPI (Realtor.com API Gateway)
-- Depth Anything V2 (Depth Estimation)
-- DFormerV2 (Semantic Segmentation & Feature Extraction)
-- Segment Anything Model 3D (SAM3D) (3D Object Segmentation)
-- Open3D (Point Cloud Processing & Mesh Generation)
-- PyTorch with ROCm 6.x (AMD GPU Acceleration)
-- AMD Instinct MI300X (GPU Hardware)
-- Claude API (Script Generation & Semantic Search)
-- ElevenLabs API (Text-to-Speech)
-- Zod (Schema Validation)
+- Depth Anything V2
+- DFormerV2
+- Segment Anything Model 3D (SAM3D)
+- Open3D
+- PyTorch with ROCm 6.x
+- AMD Instinct MI300X
+- Claude API
+- ElevenLabs API
+- Zod
 
 ---
 
@@ -129,43 +128,45 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
 
 ### Architecture Pipeline
 
-**PIPELINE A: 3D Reconstruction**
-```
-Address Input → Realtor.com API (RapidAPI) → Interior Photos
-    ↓
-Depth Anything V2 → Depth Maps
-    ↓
-SAM3D Segmentation → Segmentation Masks
-    ↓
-Point Cloud Generation → 3D Model
-    ↓
-.glb Export → WebSpatial Renderer (Apple Vision Pro)
-```
+### &nbsp; **PIPELINE A: 3D Reconstruction**
 
-**PIPELINE B: AI Narration**
-```
-Address Input → Realtor.com API (RapidAPI) → Interior Photos
-    ↓
-Depth Anything V2 → Depth Maps
-    ↓
-DFormerV2 on AMD GPU → Semantic Features & Room Analysis
-    ↓
-Aggregated Property Summary
-    ↓
-Claude → Realtor Script Generation
-    ↓
-ElevenLabs → Voice-Over Audio
-```
 
-**Frontend Integration**
-```
-Both Pipelines → Next.js Frontend
-    ↓
-Address Search & Map Display
-    ↓
-Progress Tracking with Real-Time Updates
-    ↓
-Tour Experience Page with 3D Viewer + Audio Player
-    ↓
-Semantic Search Chat Interface
-```
+    Address Input → Realtor.com API (RapidAPI) → Interior Photos
+        ↓
+    Depth Anything V2 → Depth Maps
+        ↓
+    SAM3D Segmentation → Segmentation Masks
+        ↓
+    Point Cloud Generation → 3D Model
+        ↓
+    .glb Export → WebSpatial Renderer (Apple Vision Pro)
+
+
+### &nbsp; **PIPELINE B: AI Narration**
+
+
+    Address Input → Realtor.com API (RapidAPI) → Interior Photos
+        ↓
+    Depth Anything V2 → Depth Maps
+        ↓
+    DFormerV2 on AMD GPU → Semantic Features & Room Analysis
+        ↓
+    Aggregated Property Summary
+        ↓
+    Claude → Realtor Script Generation
+        ↓
+    ElevenLabs → Voice-Over Audio
+
+
+### &nbsp; **Frontend Integration**
+
+
+    Both Pipelines → Next.js Frontend
+        ↓
+    Address Search & Map Display
+        ↓
+    Progress Tracking with Real-Time Updates
+        ↓
+    Tour Experience Page with 3D Viewer + Audio Player
+        ↓
+    Semantic Search Chat Interface
