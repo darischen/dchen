@@ -42,10 +42,15 @@ This website is the portfolio of my projects that I've done.
 - React.js 18
 - React Router
 - HTML5
-- CSS3 (Custom Properties, Flexbox, Grid)
-- JavaScript (ES6+)
+- CSS3
+- Tailwind CSS
+- JavaScript
 - Node.js
 - Markdown (ReactMarkdown)
+- Rehype
+- Remark
+- Katex
+- LaTeX
 - Vercel (Hosting)
 - Git & GitHub
 
