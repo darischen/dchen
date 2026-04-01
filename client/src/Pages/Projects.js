@@ -18,19 +18,19 @@ const Projects = () => {
         'An AI-powered patent search and drafting assistant using semantic embeddings and vector similarity search. Combines LLM-based analysis with USPTO data to help students and inventors identify related patents and receive AI-assisted drafting suggestions.',
     },
     {
-      id: 'flipperzillow',
-      title: 'FlipperZillow',
-      categories: ['ml', 'web'],
-      tools: 'Depth Anything V2, SAM3D, WebSpatial, DFormerV2, AMD ROCm, PyTorch, Open3D, ElevenLabs API, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, Claude API, Google Maps API, Three.js',
-      description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
-    },
-    {
       id: 'chess',
       title: 'Mini-Stockfish',
       categories: ['ml'],
       tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython, Multi-threading',
       description:
         'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
+    },
+    {
+      id: 'flipperzillow',
+      title: 'FlipperZillow',
+      categories: ['ml', 'web'],
+      tools: 'Depth Anything V2, SAM3D, WebSpatial, DFormerV2, AMD ROCm, PyTorch, Open3D, ElevenLabs API, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, Claude API, Google Maps API, Three.js',
+      description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
       id: 'simplerfy',
