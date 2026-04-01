@@ -102,6 +102,14 @@ const Projects = () => {
       description:
         'My personal portfolio website, built using React.js and Tailwind',
     },
+    {
+      id: 'portfolio-redesign',
+      title: 'Portfolio Redesign: Dark Refined Aesthetic',
+      categories: ['web'],
+      tools: 'React.js, CSS3 Custom Properties, Flexbox, CSS Grid, React Router',
+      description:
+        'A comprehensive redesign introducing monospace typography, dark refined aesthetic, multi-accent color system, and tab-based category filtering to showcase work across AI/ML, hardware, and web domains.',
+    },
   ];
 
   const tabs = [
