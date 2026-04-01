@@ -1,20 +1,25 @@
-// src/Pages/Projects.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import TabNavigation from '../components/TabNavigation.js';
+import ProjectCard from '../components/ProjectCard.js';
+import PageHeader from '../components/PageHeader.js';
+import headshot from './headshot.jpg';
 import '../App.css';
 
 const Projects = () => {
+  const [activeCategory, setActiveCategory] = useState('all');
+
   const projects = [
     {
       id: 'flipperzillow',
       title: 'FlipperZillow',
+      category: 'ml',
       tools: 'Next.js, React, TypeScript, Tailwind CSS, Three.js, WebSpatial, Claude API, ElevenLabs API, DFormerV2, PyTorch, ROCm, AMD GPU, RapidAPI, Realtor.com, Google Maps API, Depth Anything V2, SAM3D, Open3D',
-      description:
-        'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration. Fetches Realtor.com property photos via RapidAPI, generates depth maps, reconstructs 3D models, analyzes rooms with semantic AI on AMD ROCm GPU, and creates professional voice-over tours.',
+      description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
     },
     {
       id: 'weatherapp',
       title: 'WeatherApp',
+      category: 'web',
       tools: 'Next.js, React, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Google Places API, Open-Meteo API, YouTube API, Leaflet, pdfkit, papaparse, xmlbuilder2',
       description:
         'A full-stack weather application with real-time forecasts, interactive maps, location search via Google Places, and database-backed weather records with CSV/PDF/XML export capabilities.',
@@ -22,6 +27,7 @@ const Projects = () => {
     {
       id: 'simplerfy',
       title: 'Simplerfy',
+      category: 'web',
       tools: 'Next.js, React, TypeScript, Tailwind CSS, Claude API, Chrome Extension API, LaTeX, PDF parsing',
       description:
         'An AI-powered job application platform featuring resume tailoring, interview answer generation, and resume scoring powered by Claude. Includes a browser extension that autofills job applications across 15+ major job boards.',
@@ -29,6 +35,7 @@ const Projects = () => {
     {
       id: 'groundworks',
       title: 'Groundwork Books Full-Stack Commercial Website',
+      category: 'web',
       tools: 'Next.js, Vercel, Firebase, Square, Redis, Pinecone, Tailwind, Instagram API, Google Forms API',
       description:
         'A full-stack commercial website hosted on Vercel for Groundwork Books, including a shopping cart and inventory management system.',
@@ -36,6 +43,7 @@ const Projects = () => {
     {
       id: 'chess',
       title: 'Mini-Stockfish',
+      category: 'ml',
       tools: 'Python, PyGame, Git, GitHub, PyTorch, Cython, Multi-threading',
       description:
         'A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.',
@@ -43,13 +51,15 @@ const Projects = () => {
     {
       id: 'CPU',
       title: 'TriCore9',
+      category: 'hw',
       tools: 'System Verilog, Intel FPGA ModelSim, Quartus Prime',
       description:
-        'An 8-bit CPU with a custom 9-bit instruction set architecture and custom assembler, implemented using System Verilog and simulated on Intel FPGA ModelSim. The 9-bit ISA is inspired by MIPS and can complete Two\'s Complement Multiplication with two and three terms and calculate Hamming Distance.',
+        'An 8-bit CPU with a custom 9-bit instruction set architecture and custom assembler, implemented using System Verilog and simulated on Intel FPGA ModelSim.',
     },
     {
       id: 'redshift',
       title: 'Redshift (Research)',
+      category: 'ml',
       tools: 'Python, Git, GitHub, PyTorch, Transformers, LLMs',
       description:
         'An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.',
@@ -57,12 +67,14 @@ const Projects = () => {
     {
       id: '16bit-adder',
       title: '16-bit Carry Look-Ahead Adder',
+      category: 'hw',
       tools: 'Digital, Verilog',
       description: 'A 16 bit bitwise addition calculator using Carry Look-Ahead.',
     },
     {
       id: 'eews',
       title: 'Elon Early Warning System (EEWS)',
+      category: 'ml',
       tools: 'Git, PyTorch, Jupyter, Numpy, Pandas, Adaptive Moment Estimation, CUDA',
       description:
         'Stock price prediction using a Long Short Term Memory neural network.',
@@ -70,12 +82,14 @@ const Projects = () => {
     {
       id: 'devblog',
       title: 'Developer Blog',
+      category: 'web',
       tools: 'HTML, CSS, JavaScript, CodeMirror, Git, GitHub Pages, Miro, Figma, Slack',
       description: 'A full-stack Developer Blog for daily development updates.',
     },
     {
       id: 'hearthpebble',
       title: 'Hearthpebble',
+      category: 'web',
       tools: 'MongoDB, Express.js, React.js, Node.js, Socket.io, Axios, ThreeJS, GSAP',
       description:
         'A full-stack web-based 1-on-1 card game, using 3D graphics with ThreeJS and real-time communication via WebSockets and Socket.io.',
@@ -83,51 +97,51 @@ const Projects = () => {
     {
       id: 'darischen',
       title: 'darischen.com',
+      category: 'web',
       tools: 'React.js, Tailwind CSS, Vercel',
       description:
         'My personal portfolio website, built using React.js and Tailwind',
     },
   ];
 
-  return (
-    <div className="max-w-[1200px] mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold text-white mb-8 pb-2 border-b-2 border-[#0073e6]">
-        Projects
-      </h1>
+  const tabs = [
+    { id: 'all', label: 'All', accent: 'ml' },
+    { id: 'ml', label: 'AI/ML', accent: 'ml' },
+    { id: 'hw', label: 'Hardware', accent: 'hw' },
+    { id: 'web', label: 'Web', accent: 'web' },
+  ];
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <Link
-            key={project.id}
-            to={`/projects/${project.id}`}
-            state={{ project }}
-            className="
-              bordered-link
-              block
-              bg-white
-              p-6
-              rounded-lg
-              shadow-md
-              transition-all
-              hover:shadow-xl
-              hover:bg-gray-100
-              hover:-translate-y-1
-              border              /* <-- add a border */
-              border-gray-200     /* <-- border color */
-            "
-          >
-            <h2 className="text-xl font-bold text-[#0073e6] mb-2">
-              {project.title}
-            </h2>
-            <p className="text-gray-600 mb-3">
-              <strong>Tools:</strong> {project.tools}
-            </p>
-            <p className="text-gray-700 mb-3">{project.description}</p>
-            <p className="text-[#0073e6] font-medium">Learn More →</p>
-          </Link>
-        ))}
+  const filteredProjects = activeCategory === 'all'
+    ? projects
+    : projects.filter(p => p.category === activeCategory);
+
+  return (
+    <>
+      <PageHeader
+        headshot={headshot}
+        name="Daris Chen"
+        title="Software Engineer"
+        bio="Full-stack, ML, and hardware systems. Building at the intersection of software and silicon."
+      />
+      <div className="projects-section">
+        <div className="projects-container">
+          <TabNavigation
+            tabs={tabs}
+            activeTab={activeCategory}
+            onTabChange={setActiveCategory}
+          />
+          <div className="projects-grid">
+            {filteredProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                category={project.category}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
