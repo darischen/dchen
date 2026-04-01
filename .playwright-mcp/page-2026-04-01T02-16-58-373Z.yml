@@ -1,0 +1,85 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Daris Chen" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+          - generic [ref=e15]: Home
+        - link "Projects" [ref=e17] [cursor=pointer]:
+          - /url: /projects
+          - img [ref=e19]
+          - generic [ref=e24]: Projects
+        - link "Resume" [ref=e26] [cursor=pointer]:
+          - /url: /resume
+          - img [ref=e28]
+          - generic [ref=e31]: Resume
+  - generic [ref=e32]:
+    - generic [ref=e34]:
+      - img "Headshot" [ref=e36]
+      - generic [ref=e37]:
+        - heading "Daris Chen" [level=1] [ref=e38]
+        - paragraph [ref=e39]: Software Engineer
+        - paragraph [ref=e40]: Full-stack, ML, and hardware systems. Building at the intersection of software and silicon.
+        - generic [ref=e41]:
+          - link "GitHub" [ref=e42] [cursor=pointer]:
+            - /url: https://github.com/darischen
+          - generic [ref=e43]: ·
+          - link "LinkedIn" [ref=e44] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/darischen
+          - generic [ref=e45]: ·
+          - link "Email" [ref=e46] [cursor=pointer]:
+            - /url: mailto:daris.chen@gmail.com
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - button "All" [ref=e50] [cursor=pointer]
+        - button "AI/ML" [active] [ref=e51] [cursor=pointer]
+        - button "Hardware" [ref=e52] [cursor=pointer]
+        - button "Web" [ref=e53] [cursor=pointer]
+      - generic [ref=e54]:
+        - 'link "▸ AI/ML FlipperZillow An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration. Next.js React TypeScript Tailwind CSS Three.js" [ref=e55] [cursor=pointer]':
+          - /url: /projects/flipperzillow
+          - generic [ref=e57]: ▸ AI/ML
+          - heading "FlipperZillow" [level=3] [ref=e58]
+          - paragraph [ref=e59]: "An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration."
+          - generic [ref=e60]:
+            - generic [ref=e61]: Next.js
+            - generic [ref=e62]: React
+            - generic [ref=e63]: TypeScript
+            - generic [ref=e64]: Tailwind CSS
+            - generic [ref=e65]: Three.js
+        - link "▸ AI/ML Mini-Stockfish A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization. Python PyGame Git GitHub PyTorch" [ref=e99] [cursor=pointer]:
+          - /url: /projects/chess
+          - generic [ref=e101]: ▸ AI/ML
+          - heading "Mini-Stockfish" [level=3] [ref=e102]
+          - paragraph [ref=e103]: A mini version of Stockfish chess engine, using Python and Pygame, along with Cython for performance optimization.
+          - generic [ref=e104]:
+            - generic [ref=e105]: Python
+            - generic [ref=e106]: PyGame
+            - generic [ref=e107]: Git
+            - generic [ref=e108]: GitHub
+            - generic [ref=e109]: PyTorch
+        - link "▸ AI/ML Redshift (Research) An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs. Python Git GitHub PyTorch Transformers" [ref=e119] [cursor=pointer]:
+          - /url: /projects/redshift
+          - generic [ref=e121]: ▸ AI/ML
+          - heading "Redshift (Research)" [level=3] [ref=e122]
+          - paragraph [ref=e123]: An automated adversarial jailbreak prompt generation for red-teaming framework utilizing attacker, target, and judge transformers and LLMs.
+          - generic [ref=e124]:
+            - generic [ref=e125]: Python
+            - generic [ref=e126]: Git
+            - generic [ref=e127]: GitHub
+            - generic [ref=e128]: PyTorch
+            - generic [ref=e129]: Transformers
+        - link "▸ AI/ML Elon Early Warning System (EEWS) Stock price prediction using a Long Short Term Memory neural network. Git PyTorch Jupyter Numpy Pandas" [ref=e138] [cursor=pointer]:
+          - /url: /projects/eews
+          - generic [ref=e140]: ▸ AI/ML
+          - heading "Elon Early Warning System (EEWS)" [level=3] [ref=e141]
+          - paragraph [ref=e142]: Stock price prediction using a Long Short Term Memory neural network.
+          - generic [ref=e143]:
+            - generic [ref=e144]: Git
+            - generic [ref=e145]: PyTorch
+            - generic [ref=e146]: Jupyter
+            - generic [ref=e147]: Numpy
+            - generic [ref=e148]: Pandas

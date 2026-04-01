@@ -12,22 +12,22 @@ const Resume = () => {
   const resumeFiles = {
     general: {
       file: resumePDF,
-      filename: 'DarisChenResume.pdf',
+      filename: 'DarisChenResumeSWE.pdf',
       label: 'General'
     },
     web: {
       file: resumePDF,
-      filename: 'DarisChenResume.pdf',
+      filename: 'DarisChenResumeWD.pdf',
       label: 'Web Dev'
     },
     ml: {
       file: resumePDF,
-      filename: 'DarisChenResume.pdf',
+      filename: 'DarisChenResumeAI.pdf',
       label: 'AI/ML'
     },
     hw: {
       file: resumePDF,
-      filename: 'DarisChenResume.pdf',
+      filename: 'DarisChenResumeEE.pdf',
       label: 'Hardware'
     }
   };

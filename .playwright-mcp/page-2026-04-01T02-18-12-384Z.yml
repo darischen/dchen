@@ -1,0 +1,48 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Daris Chen" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+          - generic [ref=e15]: Home
+        - link "Projects" [ref=e17] [cursor=pointer]:
+          - /url: /projects
+          - img [ref=e19]
+          - generic [ref=e24]: Projects
+        - link "Resume" [ref=e26] [cursor=pointer]:
+          - /url: /resume
+          - img [ref=e28]
+          - generic [ref=e31]: Resume
+  - generic [ref=e32]:
+    - generic [ref=e34]:
+      - img "Headshot" [ref=e36]
+      - generic [ref=e37]:
+        - heading "Daris Chen" [level=1] [ref=e38]
+        - paragraph [ref=e39]: Software Engineer
+        - paragraph [ref=e40]: Full-stack, ML, and hardware systems. Building at the intersection of software and silicon.
+        - generic [ref=e41]:
+          - link "GitHub" [ref=e42] [cursor=pointer]:
+            - /url: https://github.com/darischen
+          - generic [ref=e43]: ·
+          - link "LinkedIn" [ref=e44] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/darischen
+          - generic [ref=e45]: ·
+          - link "Email" [ref=e46] [cursor=pointer]:
+            - /url: mailto:daris.chen@gmail.com
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - heading "Resume" [level=2] [ref=e50]
+        - link "Download PDF" [ref=e51] [cursor=pointer]:
+          - /url: /static/media/DarisChenResume.f17f81446a3f6a61a3ec.pdf
+          - img [ref=e52]
+          - text: Download PDF
+      - generic [ref=e55]:
+        - button "General" [ref=e56] [cursor=pointer]
+        - button "Web Dev" [ref=e57] [cursor=pointer]
+        - button "AI/ML" [ref=e58] [cursor=pointer]
+        - button "Hardware" [ref=e59] [cursor=pointer]
+      - iframe [ref=e61]:
+        
