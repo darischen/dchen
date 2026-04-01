@@ -661,3 +661,10 @@ p {
     font-size: 1.4rem;
   }
 }
+
+/* Project Detail Images */
+img {
+  width: 800px;
+  object-fit: contain;
+  max-width: 100%;
+}
