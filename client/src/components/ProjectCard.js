@@ -27,14 +27,30 @@ const ProjectCard = ({
     return '';
   };
 
+  const getAccentColor = (cat) => {
+    if (cat === 'ml') return '#00d9ff';
+    if (cat === 'hw') return '#7c3aed';
+    if (cat === 'web') return '#ec4899';
+    return '#333';
+  };
+
   const primaryCategory = categories[0];
   const techArray = project.tools.split(', ').slice(0, 5);
+
+  // Create gradient border style for multi-category cards
+  const cardStyle = categories.length > 1 ? {
+    borderLeft: '3px solid transparent',
+    backgroundImage: `linear-gradient(#1a1a2e, #1a1a2e), linear-gradient(to bottom, ${getAccentColor(categories[0])}, ${getAccentColor(categories[1])})`,
+    backgroundClip: 'padding-box, border-box',
+    backgroundOrigin: 'padding-box, border-box',
+  } : {};
 
   return (
     <Link
       to={`/projects/${project.id}`}
       state={{ project }}
       className={`project-card ${getAccentClass(primaryCategory)}`}
+      style={cardStyle}
     >
       <div className="project-card-header">
         {categories.map((cat, idx) => (
