@@ -1,152 +1,50 @@
-/* Global Styles */
+:root {
+  /* Base Colors */
+  --bg-primary: #0a0a14;
+  --bg-secondary: #1a1a2e;
+  --border-color: #333;
+  --text-primary: #ffffff;
+  --text-secondary: #aaa;
+  --text-tertiary: #bbb;
+
+  /* Accent Colors */
+  --accent-ml: #00d9ff;
+  --accent-ml-bright: #00d9ff;
+  --accent-ml-light: #a78bfa;
+
+  --accent-hw: #7c3aed;
+  --accent-hw-bright: #a78bfa;
+  --accent-hw-light: #a78bfa;
+
+  --accent-web: #ec4899;
+  --accent-web-bright: #f472b6;
+  --accent-web-light: #f472b6;
+
+  /* General Accent (for links, primary actions) */
+  --accent-general: #ec4899;
+
+  /* Spacing */
+  --container-max-width: 900px;
+  --padding-section: 50px;
+  --padding-content: 40px;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a2e; /* Match navbar color */
-  color: white; /* Ensure text is readable on dark background */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.app {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #1a1a2e; /* Match navbar color */
+code {
+  font-family: 'Courier New', Courier, monospace;
 }
 
-/* Navbar */
-.navbar {
-  max-width: 100%;
-  background-color: #1a1a2e; /* Dark background color */
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center; /* Center overall content */
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.navbar .navbar-content {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  width: 900px;
-}
-
-.navbar .navbar-brand {
-  margin-right: auto; /* Align brand to the left */
-}
-
-.nav-buttons {
-  display: flex;
-  justify-content: center; /* Center buttons within container */
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.1); /* Background for buttons container */
-  padding: 10px 20px;
-  border-radius: 15px; /* Rounded rectangle for desktop buttons */
-  gap: 20px; /* Space between buttons */
-}
-
-.button-container {
-  display: flex;
-  align-items: center;
-}
-
-.nav-buttons .button-container .dropdown-link {
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav-buttons .button-container .dropdown-link:hover {
-  transform: scale(1.05); /* Slight scaling on hover */
-}
-
-.navbar .nav-buttons .nav-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.navbar .nav-buttons .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
-}
-
-.navbar .nav-buttons .nav-item.active {
-  background-color: rgba(255, 255, 255, 0.2); /* Active item */
-}
-
-.navbar .nav-buttons .nav-item span {
-  font-size: 0.9rem;
-}
-
-/* Project Border */
-
-.bordered-link {
-  border: 3px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  display: block;
-  padding: 50px;
-  margin: 15px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.2);
-}
-
-.bordered-link:hover {
-  text-decoration: none;
-}
-
-/* Profile Image */
-.profile-image {
-  width: 150px; /* Adjust size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Small rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  object-fit: cover; /* Ensure the image scales correctly */
-}
-
-/* Section and Headers */
-.header-title,
-.section-title {
-  color: white; /* Ensure headers are readable */
-  font-size: 1.8em;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Lighter border for contrast */
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Light contrast for sections */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Links */
-.link {
-  color: #0073e6; /* Keep links distinguishable */
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Reset link styles */
-a:link,
-a:visited {
-  color: inherit;
+a {
+  color: var(--accent-general);
   text-decoration: none;
 }
 
@@ -154,99 +52,64 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
-  color: inherit;
+/* Container max-width utility */
+.max-w-container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Header */
-.custom-header {
-  background-color: #1a1a2e; /* Match navbar background */
-  color: white;
-  padding: 1.5rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.header-title {
-  font-size: 2.5rem;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: white;
-  margin-bottom: 0.3rem;
-  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.header-title:hover {
-  text-decoration: underline;
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-primary);
 }
 
-.header-subtitle {
-  font-size: 1.2rem;
-  color: #d1d5db; /* Lighter text for subtitles */
-  margin-bottom: 1rem;
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
 }
 
-.header-contact {
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+p {
   font-size: 0.9rem;
-  color: #d1d5db; /* Lighter text for smaller details */
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
-.header-link {
-  color: #0073e6;
-  text-decoration: none;
-  margin: 0 5px;
+/* App Container */
+.app {
+  background-color: var(--bg-primary);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header-link:hover {
-  text-decoration: underline;
+/* Flex utilities */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar .navbar-content > .nav-buttons {
-    display: flex; /* Always display the navbar buttons */
-  }
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-img[alt="Calendar"]{width: 800px; object-fit: contain;}
-img[alt="Journal"]{width: 800px; object-fit: contain;}
-img[alt="Task List"]{width: 800px; object-fit: contain;}
-img[alt="4 Bit Adder"]{width: 800px; object-fit: contain;}
-img[alt="Single Level CLA"]{width: 800px; object-fit: contain;}
-img[alt="Two Level CLA"]{width: 800px; object-fit: contain;}
-img[alt="Extended CLA Module"]{width: 800px; object-fit: contain;}
-img[alt="2421 Corrector"]{width: 800px; object-fit: contain;}
-img[alt="2421 Single"]{width: 800px; object-fit: contain;}
-img[alt="2421 Two"]{width: 800px; object-fit: contain;}
-img[alt="Home Page"]{width: 800px; object-fit: contain;}
-img[alt="Battle"]{width: 800px; object-fit: contain;}
-img[alt="Home"]{width: 800px; object-fit: contain;}
-img[alt="Projects"]{width: 800px; object-fit: contain;}
-img[alt="Resume"]{width: 800px; object-fit: contain;}
-img[alt="Contact"]{width: 800px; object-fit: contain;}
-img[alt="Landing"]{width: 800px; object-fit: contain;}
-img[alt="Community"]{width: 800px; object-fit: contain;}
-img[alt="Store"]{width: 800px; object-fit: contain;}
-img[alt="Modal"]{width: 800px; object-fit: contain;}
-img[alt="Shopping Cart"]{width: 800px; object-fit: contain;}
-img[alt="About"]{width: 800px; object-fit: contain;}
-img[alt="Predictions"]{width: 800px; object-fit: contain;}
-img[alt="NVDA"]{width: 800px; object-fit: contain;}
-img[alt="Flowchart"]{width: 800px; object-fit: contain;}
-img[alt="Algorithm"]{width: 800px; object-fit: contain;}
-img[alt="Chess Board"]{width: 800px; object-fit: contain;}
-img[alt="Book Moves"]{width: 800px; object-fit: contain;}
-img[alt="UML"]{width: 800px; object-fit: contain;}
-img[alt="Architecture"]{width: 800px; object-fit: contain;}
-img[alt="InstFetch"]{width: 800px; object-fit: contain;}
-img[alt="InstROM"]{width: 800px; object-fit: contain;}
-img[alt="CTRL"]{width: 800px; object-fit: contain;}
-img[alt="RegFile"]{width: 800px; object-fit: contain;}
-img[alt="ALU"]{width: 800px; object-fit: contain;}
-img[alt="datamem"]{width: 800px; object-fit: contain;}
+/* Border utilities */
+.border-accent-ml { border-left-color: var(--accent-ml); }
+.border-accent-hw { border-left-color: var(--accent-hw); }
+.border-accent-web { border-left-color: var(--accent-web); }
