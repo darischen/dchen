@@ -3,7 +3,10 @@ import { Download } from 'lucide-react';
 import TabNavigation from '../components/TabNavigation.js';
 import PageHeader from '../components/PageHeader.js';
 import headshot from './headshot.jpg';
-import resumePDF from './DarisChenResume.pdf';
+import resumeSWE from './DarisChenResumeSWE.pdf';
+import resumeWD from './DarisChenResumeWD.pdf';
+import resumeAI from './DarisChenResumeAI.pdf';
+import resumeEE from './DarisChenResumeEE.pdf';
 import '../App.css';
 
 const Resume = () => {
@@ -11,22 +14,22 @@ const Resume = () => {
 
   const resumeFiles = {
     general: {
-      file: resumePDF,
+      file: resumeSWE,
       filename: 'DarisChenResumeSWE.pdf',
       label: 'General'
     },
     web: {
-      file: resumePDF,
+      file: resumeWD,
       filename: 'DarisChenResumeWD.pdf',
       label: 'Web Dev'
     },
     ml: {
-      file: resumePDF,
+      file: resumeAI,
       filename: 'DarisChenResumeAI.pdf',
       label: 'AI/ML'
     },
     hw: {
-      file: resumePDF,
+      file: resumeEE,
       filename: 'DarisChenResumeEE.pdf',
       label: 'Hardware'
     }
