@@ -97,11 +97,8 @@ WeatherApp is a full-stack weather application that provides real-time weather d
 
 ## Images
 
-### Search & Current Weather
-// IMAGE 1: SEARCH_AND_WEATHER
-
-### Forecast & Map
-// IMAGE 2: FORECAST_AND_MAP
+### Search & Current Weather!
+![Search and Weather](/markdown/weatherapp-assets/searchweather.png)
 
 ### Records & Export
-// IMAGE 3: RECORDS_AND_EXPORT
+![Records](/markdown/weatherapp-assets/records.png)

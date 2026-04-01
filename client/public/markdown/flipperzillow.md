@@ -110,17 +110,11 @@ FlipperZillow is an immersive AI-powered house tour platform that transforms rea
 
 ## Images
 
+### Semantic Search and Results
+![HouseSearch](/markdown/flipperzillow-assets/HouseSearch.png)
+
 ### Address Input & Google Maps
-// IMAGE 1: ADDRESS_SEARCH
-
-### Room Analysis Display
-// IMAGE 2: ROOM_ANALYSIS
-
-### 3D Spatial Viewer
-// IMAGE 3: SPATIAL_VIEWER
-
-### Audio Narration & Chat
-// IMAGE 4: NARRATION_AND_CHAT
+![GoogleMaps](/markdown/flipperzillow-assets/GoogleMaps.png)
 
 ---
 
