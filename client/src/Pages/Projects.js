@@ -10,6 +10,14 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 'HB100',
+      title: 'HB100 Phased Array Radar',
+      categories: ['hw'],
+      tools: 'ESP32-S3, Raspberry Pi 4, Python, NumPy, SciPy, C, FreeRTOS, Microwave RF, Signal Processing',
+      description:
+        'A 4-element phased-array Doppler radar (10.525 GHz) with custom op-amp signal conditioning, dual processing pipelines (MUSIC + monopulse), and Extended Kalman Filter tracking. Dual parallel DSP approaches: phase-coherent angle estimation via MUSIC and amplitude-based zone classification robust to oscillator drift.',
+    },
+    {
       id: 'patentiq',
       title: 'PatentIQ AI',
       categories: ['ml', 'web'],
