@@ -1,6 +1,6 @@
 module.exports = {
   source: 'build',
-  puppeteerArgs: [
+  launchArgs: [
     '--no-sandbox',
     '--disable-setuid-sandbox',
     '--single-process',
