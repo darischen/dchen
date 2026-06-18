@@ -68,6 +68,17 @@ const ProjectCard = ({
           </span>
         ))}
       </div>
+      {project.github && (
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-github-link"
+          onClick={(e) => e.stopPropagation()}
+        >
+          View on GitHub
+        </a>
+      )}
     </Link>
   );
 };
