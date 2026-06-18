@@ -31,8 +31,5 @@ module.exports = {
     '/projects/devblog',
     '/projects/hearthpebble',
     '/projects/darischen'
-  ],
-  puppeteer: {
-    executablePath: require('@sparticuz/chromium').executablePath
-  }
+  ]
 };
