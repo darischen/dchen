@@ -46,7 +46,7 @@ const projects = [
   },
   {
     id: 'groundworks',
-    title: 'Groundwork Books Full-Stack Commercial Website',
+    title: 'Groundwork Books',
     categories: ['web'],
     tools: 'Square, Redis, Pinecone, Tailwind CSS, Next.js, Vercel, Instagram API, Google Forms API',
     description:

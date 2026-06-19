@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import ProjectCardDetail from './Pages/ProjectCardDetail';
 import Resume from './Pages/Resume';
+import NotFound from './Pages/NotFound';
 import './App.css';
 
 // react-snap crawls with this user agent. Skip Analytics during prerender so it
@@ -26,6 +27,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectCardDetail />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
