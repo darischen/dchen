@@ -1,9 +1,17 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader.js';
+import useSeo from '../hooks/useSeo.js';
 import headshot from './headshot.jpg';
 import '../App.css';
 
 const Home = () => {
+  useSeo({
+    title: 'Daris Chen | Software Engineer',
+    description:
+      'Daris Chen is a UC San Diego Computer Engineering graduate building full-stack, AI/ML, and hardware systems. Projects include PatentIQ, FlipperZillow, Mini-Stockfish, and a 4-element phased array radar.',
+    path: '/',
+  });
+
   return (
     <div>
       <PageHeader
