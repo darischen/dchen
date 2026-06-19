@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import projects from '../data/projects.js';
+import useSeo from '../hooks/useSeo.js';
 import '../App.css';
 
 const ProjectCardDetail = () => {
@@ -9,6 +11,15 @@ const ProjectCardDetail = () => {
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const project = projects.find((p) => p.id === id);
+  useSeo({
+    title: project ? `${project.title} | Daris Chen` : 'Project | Daris Chen',
+    description: project
+      ? project.description
+      : 'A project by Daris Chen, UC San Diego Computer Engineering graduate.',
+    path: `/projects/${id}`,
+  });
 
   useEffect(() => {
     const loadMarkdown = async () => {
