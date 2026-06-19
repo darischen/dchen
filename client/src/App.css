@@ -351,6 +351,11 @@ p {
   border-bottom-color: var(--accent-web);
 }
 
+.tab-button.active.accent-general {
+  color: #ec4899;
+  border-bottom-color: #ec4899;
+}
+
 /* Responsive Tabs */
 @media (max-width: 768px) {
   .tab-navigation {
