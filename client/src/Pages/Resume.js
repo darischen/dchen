@@ -44,7 +44,7 @@ const Resume = () => {
   };
 
   const tabs = [
-    { id: 'general', label: 'General', accent: 'ml' },
+    { id: 'general', label: 'General', accent: 'general' },
     { id: 'web', label: 'Web Dev', accent: 'web' },
     { id: 'ml', label: 'AI/ML', accent: 'ml' },
     { id: 'hw', label: 'Hardware', accent: 'hw' },

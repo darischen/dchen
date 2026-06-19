@@ -18,7 +18,7 @@ const Projects = () => {
   });
 
   const tabs = [
-    { id: 'all', label: 'All', accent: 'ml' },
+    { id: 'all', label: 'All', accent: 'general' },
     { id: 'ml', label: 'AI/ML', accent: 'ml' },
     { id: 'hw', label: 'Hardware', accent: 'hw' },
     { id: 'web', label: 'Web', accent: 'web' },
