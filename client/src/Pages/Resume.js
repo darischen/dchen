@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Download } from 'lucide-react';
 import TabNavigation from '../components/TabNavigation.js';
 import PageHeader from '../components/PageHeader.js';
+import useSeo from '../hooks/useSeo.js';
 import headshot from './headshot.jpg';
 import resumeSWE from './DarisChenResumeSWE.pdf';
 import resumeWD from './DarisChenResumeWD.pdf';
@@ -11,6 +12,13 @@ import '../App.css';
 
 const Resume = () => {
   const [activeResume, setActiveResume] = useState('general');
+
+  useSeo({
+    title: 'Resume | Daris Chen',
+    description:
+      'Resume of Daris Chen, UC San Diego Computer Engineering graduate. Download general, web development, AI/ML, or hardware versions.',
+    path: '/resume',
+  });
 
   const resumeFiles = {
     general: {
@@ -36,7 +44,7 @@ const Resume = () => {
   };
 
   const tabs = [
-    { id: 'general', label: 'General', accent: 'ml' },
+    { id: 'general', label: 'General', accent: 'general' },
     { id: 'web', label: 'Web Dev', accent: 'web' },
     { id: 'ml', label: 'AI/ML', accent: 'ml' },
     { id: 'hw', label: 'Hardware', accent: 'hw' },

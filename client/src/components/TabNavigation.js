@@ -13,6 +13,7 @@ const TabNavigation = ({
     if (accent === 'ml') return 'accent-ml';
     if (accent === 'hw') return 'accent-hw';
     if (accent === 'web') return 'accent-web';
+    if (accent === 'general') return 'accent-general';
     return '';
   };
 
