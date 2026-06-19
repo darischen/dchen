@@ -8,10 +8,16 @@ import ProjectCardDetail from './Pages/ProjectCardDetail';
 import Resume from './Pages/Resume';
 import './App.css';
 
+// react-snap crawls with this user agent. Skip Analytics during prerender so it
+// doesn't inject the /_vercel/insights script, which 404s to HTML in the static
+// crawl and throws "Unexpected token '<'".
+const isPrerendering =
+  typeof navigator !== 'undefined' && navigator.userAgent === 'ReactSnap';
+
 function App() {
   return (
     <Router>
-      <Analytics />
+      {!isPrerendering && <Analytics />}
       <div className="min-h-screen bg-[#1a1a2e]">
         <Navbar />
         <div className="app">
