@@ -63,9 +63,7 @@
     },
     "include": [
       "/",
-      "/about",
       "/projects",
-      "/contact",
       "/resume",
       "/projects/HB100",
       "/projects/patentiq",
