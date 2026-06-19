@@ -50,7 +50,7 @@ const Resume = () => {
         headshot={headshot}
         name="Daris Chen"
         title="Software Engineer"
-        bio="Full-stack, ML, and hardware systems. Building at the intersection of software and silicon."
+        bio="Full-stack, AI/ML, and hardware systems. Building at the intersection of software and silicon."
       />
       <div className="resume-section">
         <div className="resume-container">

@@ -28,9 +28,9 @@ const ProjectCard = ({
   };
 
   const getAccentColor = (cat) => {
-    if (cat === 'ml') return '#00d9ff';
+    if (cat === 'ml') return '#76b900';
     if (cat === 'hw') return '#7c3aed';
-    if (cat === 'web') return '#ec4899';
+    if (cat === 'web') return '#E34C26';
     return '#333';
   };
 
