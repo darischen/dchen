@@ -8,17 +8,17 @@
   --text-tertiary: #e8e8e8;
 
   /* Accent Colors */
-  --accent-ml: #00d9ff;
-  --accent-ml-bright: #00d9ff;
-  --accent-ml-light: #00d9ff;
+  --accent-ml: #76b900;
+  --accent-ml-bright: #76b900;
+  --accent-ml-light: #76b900;
 
   --accent-hw: #7c3aed;
   --accent-hw-bright: #a78bfa;
   --accent-hw-light: #a78bfa;
 
-  --accent-web: #ec4899;
-  --accent-web-bright: #f472b6;
-  --accent-web-light: #f472b6;
+  --accent-web: #E34C26;
+  --accent-web-bright: #E34C26;
+  --accent-web-light: #E34C26;
 
   /* General Accent (for links, primary actions) */
   --accent-general: #ec4899;
@@ -147,7 +147,7 @@ p {
 }
 
 .navbar-brand a:hover {
-  color: var(--accent-general);
+  color: #00d9ff;
 }
 
 .nav-buttons {
@@ -176,8 +176,8 @@ p {
 }
 
 .nav-buttons .button-container a:hover {
-  background-color: rgba(236, 72, 153, 0.1);
-  color: var(--accent-general);
+  background-color: rgba(0, 217, 255, 0.1);
+  color: #00d9ff;
   text-decoration: none;
 }
 
@@ -240,7 +240,7 @@ p {
 
 .page-header-content .subtitle {
   margin: 0 0 15px 0;
-  color: var(--accent-ml);
+  color: #00d9ff;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -410,7 +410,7 @@ p {
 }
 
 .project-card.accent-ml:hover {
-  background-color: rgba(0, 217, 255, 0.05);
+  background-color: rgba(118, 185, 0, 0.05);
 }
 
 .project-card.accent-hw {
@@ -426,7 +426,7 @@ p {
 }
 
 .project-card.accent-web:hover {
-  background-color: rgba(236, 72, 153, 0.05);
+  background-color: rgba(227, 76, 38, 0.05);
 }
 
 /* Project Card Content */
@@ -485,9 +485,9 @@ p {
 }
 
 .tech-tag.ml {
-  background-color: rgba(0, 217, 255, 0.15);
+  background-color: rgba(118, 185, 0, 0.15);
   color: var(--accent-ml);
-  border-color: rgba(0, 217, 255, 0.3);
+  border-color: rgba(118, 185, 0, 0.3);
 }
 
 .tech-tag.hw {
@@ -497,28 +497,29 @@ p {
 }
 
 .tech-tag.web {
-  background-color: rgba(236, 72, 153, 0.15);
+  background-color: rgba(227, 76, 38, 0.15);
   color: var(--accent-web-bright);
-  border-color: rgba(236, 72, 153, 0.3);
+  border-color: rgba(227, 76, 38, 0.3);
 }
 
 .project-github-link {
   display: inline-block;
   margin-top: 12px;
   padding: 6px 12px;
-  background-color: rgba(236, 72, 153, 0.2);
-  color: var(--accent-general);
+  background-color: rgba(0, 217, 255, 0.2);
+  color: #00d9ff;
   border-radius: 4px;
-  border: 1px solid rgba(236, 72, 153, 0.4);
+  border: 1px solid rgba(0, 217, 255, 0.4);
   font-size: 0.85rem;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .project-github-link:hover {
-  background-color: rgba(236, 72, 153, 0.3);
-  border-color: rgba(236, 72, 153, 0.6);
+  background-color: rgba(0, 217, 255, 0.3);
+  border-color: rgba(0, 217, 255, 0.6);
   text-decoration: none;
 }
 

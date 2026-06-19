@@ -5,7 +5,7 @@ const PageHeader = ({
   headshot,
   name = 'Daris Chen',
   title = 'Software Engineer',
-  bio = 'Full-stack, ML, and hardware systems. Building at the intersection of software and silicon.',
+  bio = 'Full-stack, AI/ML, and hardware systems. Building at the intersection of software and silicon.',
   showDownloadButton = false,
   downloadLink = null,
   downloadFilename = null
