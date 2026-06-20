@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import projects from '../data/projects.js';
 import useSeo from '../hooks/useSeo.js';
 import '../App.css';
+
+const SITE = 'https://www.darischen.com';
 
 const ProjectCardDetail = () => {
   const { id } = useParams();
@@ -13,12 +15,27 @@ const ProjectCardDetail = () => {
   const [error, setError] = useState(null);
 
   const project = projects.find((p) => p.id === id);
+
+  const breadcrumb = useMemo(() => {
+    if (!project) return null;
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: 'Projects', item: `${SITE}/projects` },
+        { '@type': 'ListItem', position: 3, name: project.title, item: `${SITE}/projects/${id}` },
+      ],
+    };
+  }, [project, id]);
+
   useSeo({
     title: project ? `${project.title} | Daris Chen` : 'Project | Daris Chen',
     description: project
       ? project.description
       : 'A project by Daris Chen, UC San Diego Computer Engineering graduate.',
     path: `/projects/${id}`,
+    jsonLd: breadcrumb,
   });
 
   useEffect(() => {
@@ -58,6 +75,9 @@ const ProjectCardDetail = () => {
       >
         ← Back to Projects
       </button>
+      {project && (
+        <h1 style={{ color: '#fff', marginBottom: '20px' }}>{project.title}</h1>
+      )}
       <div style={{ color: '#fff' }}>
         <ReactMarkdown>{content}</ReactMarkdown>
       </div>
