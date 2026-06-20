@@ -2,13 +2,12 @@
 // Used by the Projects list, project detail pages, SEO tags, and the sitemap.
 const projects = [
   {
-    id: 'HB100',
-    title: 'HB100 Phased Array Radar',
-    categories: ['hw'],
-    tools: 'ESP32-S3, Raspberry Pi 4, Python, NumPy, SciPy, C, FreeRTOS, Microwave RF, Signal Processing',
-    description:
-      'A 4-element phased-array Doppler radar (10.525 GHz) with custom op-amp signal conditioning, dual processing pipelines (MUSIC + monopulse), and Extended Kalman Filter tracking. Dual parallel DSP approaches: phase-coherent angle estimation via MUSIC and amplitude-based zone classification robust to oscillator drift.',
-    github: 'https://github.com/darischen/PhasedArrayRadar',
+    id: 'flipperzillow',
+    title: 'FlipperZillow',
+    categories: ['ml', 'web'],
+    tools: 'Depth Anything V2, SAM3D, WebSpatial, DFormerV2, AMD ROCm, PyTorch, Open3D, ElevenLabs API, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, Claude API, Google Maps API, Three.js',
+    description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
+    github: 'https://github.com/darischen/FlipperZillow',
   },
   {
     id: 'patentiq',
@@ -28,12 +27,13 @@ const projects = [
     github: 'https://github.com/darischen/Mini-Stockfish',
   },
   {
-    id: 'flipperzillow',
-    title: 'FlipperZillow',
-    categories: ['ml', 'web'],
-    tools: 'Depth Anything V2, SAM3D, WebSpatial, DFormerV2, AMD ROCm, PyTorch, Open3D, ElevenLabs API, RapidAPI, Realtor.com, Next.js, React, TypeScript, Tailwind CSS, Claude API, Google Maps API, Three.js',
-    description: 'An immersive AI-powered house tour platform combining dual parallel pipelines: SAM3D 3D reconstruction for Apple Vision Pro spatial viewing and DFormerV2 semantic segmentation for room analysis and AI-generated realtor narration.',
-    github: 'https://github.com/darischen/FlipperZillow',
+    id: 'HB100',
+    title: 'HB100 Phased Array Radar',
+    categories: ['hw'],
+    tools: 'ESP32-S3, Raspberry Pi 4, Python, NumPy, SciPy, C, FreeRTOS, Microwave RF, Signal Processing',
+    description:
+      'A 4-element phased-array Doppler radar (10.525 GHz) with custom op-amp signal conditioning, dual processing pipelines (MUSIC + monopulse), and Extended Kalman Filter tracking. Dual parallel DSP approaches: phase-coherent angle estimation via MUSIC and amplitude-based zone classification robust to oscillator drift.',
+    github: 'https://github.com/darischen/PhasedArrayRadar',
   },
   {
     id: 'simplerfy',
