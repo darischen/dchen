@@ -2,9 +2,9 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "dchen.vercel.app" }],
-      "destination": "https://www.darischen.com/:path*",
+      "destination": "https://www.darischen.com/$1",
       "permanent": true
     }
   ]
