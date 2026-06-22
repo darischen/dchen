@@ -6,7 +6,7 @@ import '../App.css';
 
 const Home = () => {
   useSeo({
-    title: 'Daris Chen | Software Engineer',
+    title: 'Daris Chen | Software Engineer - AI/ML',
     description:
       'Daris Chen is a UC San Diego Computer Engineering graduate building full-stack, AI/ML, and hardware systems. Projects include PatentIQ, FlipperZillow, Mini-Stockfish, and a 4-element phased array radar.',
     path: '/',
