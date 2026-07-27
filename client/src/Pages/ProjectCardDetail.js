@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeRaw from 'rehype-raw';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import projects from '../data/projects.js';
 import useSeo from '../hooks/useSeo.js';
 import '../App.css';
@@ -79,7 +84,9 @@ const ProjectCardDetail = () => {
         <h1 style={{ color: '#fff', marginBottom: '20px' }}>{project.title}</h1>
       )}
       <div style={{ color: '#fff' }}>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown 
+          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[rehypeRaw, rehypeKatex]}>{content}</ReactMarkdown>
       </div>
     </div>
   );
